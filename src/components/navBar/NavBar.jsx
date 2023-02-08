@@ -9,7 +9,7 @@ const NavBar = () => {
 	return (
 		<nav
 			className={
-				location.pathname === "/" ? "bg-teal-400 h-[60vh]" : "bg-teal-400"
+				location.pathname === "/" ? "bg-teal-500 h-[60vh]" : "bg-primary"
 			}>
 			<ul className='flex justify-evenly items-center py-10'>
 				<li className='flex gap-20 text-white font-body tracking-wide cursor-pointer'>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import { DateRange } from "react-date-range";
 import format from "date-fns/format";
 import { addDays } from "date-fns";
@@ -7,7 +7,7 @@ import "./DateRange.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 
-const DateRangeComp = () => {
+const DateRangeComp = ({ setStay }) => {
 	// date state
 
 	const [range, setRange] = useState([
@@ -18,16 +18,25 @@ const DateRangeComp = () => {
 		},
 	]);
 
-	const unavailableDate = [addDays(new Date(), 8)];
-	console.log(unavailableDate);
+	const calendar = useCallback(() => {
+		setStay(range);
+	}, [range, setStay]);
+
+	useMemo(() => {
+		calendar();
+	}, [calendar]);
+
+	const unavailableDate = [
+		addDays(new Date(), 8),
+		addDays(new Date(), 9),
+		addDays(new Date(), 10),
+	];
 
 	// open close
 	const [open, setOpen] = useState(false);
 
 	// get the target element to toggle
 	const refOne = useRef(null);
-
-	console.log(range);
 
 	useEffect(() => {
 		// event listeners
@@ -53,14 +62,14 @@ const DateRangeComp = () => {
 	};
 
 	return (
-		<div className='calendarWrap mx-[39%]'>
+		<div className='calendarWrap w-full md:w-1/2 px-3'>
 			<input
-				value={`${format(range[0].startDate, "dd/MM/yyyy")} | ${format(
+				className='cursor-pointer block appearance-none w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+				value={`${format(range[0].startDate, "dd/MM/yyyy")} - ${format(
 					range[0].endDate,
 					"dd/MM/yyyy"
 				)}`}
 				readOnly
-				className='inputBox'
 				onClick={() => setOpen((open) => !open)}
 			/>
 
@@ -72,9 +81,11 @@ const DateRangeComp = () => {
 						moveRangeOnFirstSelection={false}
 						ranges={range}
 						months={1}
+						minDate={new Date()}
 						direction='horizontal'
 						className='calendarElement'
-						disabledDates={unavailableDate}
+						color='#06b6d4'
+						disabledDates={[]}
 						locale={es}
 					/>
 				)}

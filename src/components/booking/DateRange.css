@@ -1,12 +1,5 @@
-input.inputBox {
-	font-size: 18px;
-	padding: 5px 8px 4px 8px;
-	border-radius: 3px;
-	border: 1px solid #666;
-}
-
 .calendarWrap {
-	display: inline-block;
+	display: flex;
 	position: relative;
 }
 
@@ -17,4 +10,8 @@ input.inputBox {
 	top: 40px;
 	border: 1px solid #ccc;
 	z-index: 999;
+}
+
+.calendarElement .rdrWeekDays {
+	color: red;
 }
