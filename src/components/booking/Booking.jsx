@@ -8,7 +8,6 @@ const Booking = () => {
 	const [stay, setStay] = useState([]);
 
 	const submitForm = async (values) => {
-		console.log("entre !");
 		try {
 			const response = await axios({
 				method: "post",
@@ -31,6 +30,8 @@ const Booking = () => {
 						<span><b>Adultos: </b> ${values.adults}</span><br>
 						<span><b>Niños: </b> ${values.children}</span><br>
 						<span><b>Email: </b> ${values.email}</span><br>
+						<span><b>Telefono: </b> ${values.phone}</span><br>
+
 						<span><b>Desde: </b> ${values.startDate} <b>Hasta: </b> ${values.endDate}</span><br>
 						
 						</body></html>`,
@@ -38,8 +39,7 @@ const Booking = () => {
 				headers: {
 					Accept: "application/json",
 					"Content-Type": "application/json",
-					"api-key":
-						"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",
+					"api-key": process.env.REACT_APP_API_KEY,
 				},
 			});
 			console.log(response);
@@ -60,6 +60,7 @@ const Booking = () => {
 					lastName: "",
 					email: "",
 					query: "",
+					phone: "",
 				}}
 				onSubmit={(values, { resetForm }) => {
 					submitForm({ ...values, startDate, endDate });
@@ -156,6 +157,30 @@ const Booking = () => {
 								}
 							/>
 							<ErrorMessage name='lastName'>
+								{(msg) => (
+									<div className='text-customRed italic pl-1 text-xs font-semibold'>
+										{msg}
+									</div>
+								)}
+							</ErrorMessage>
+						</div>
+						<div className='w-full md:w-1/2 px-3'>
+							<label
+								htmlFor='lastName'
+								className='block tracking-wide text-white text-s font-bold mb-2'>
+								Telefono
+							</label>
+							<Field
+								type='text'
+								name='phone'
+								placeholder='Telefono *'
+								className={
+									errors.lastName
+										? "appearance-none block w-full bg-red-100 text-gray-700 border border-customRed rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+										: "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+								}
+							/>
+							<ErrorMessage name='phone'>
 								{(msg) => (
 									<div className='text-customRed italic pl-1 text-xs font-semibold'>
 										{msg}
