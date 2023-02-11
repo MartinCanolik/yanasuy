@@ -3,9 +3,19 @@ import DateRangeComp from "./DateRangeComp";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import format from "date-fns/format";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const Booking = () => {
 	const [stay, setStay] = useState([]);
+	const swappUp = (name) => {
+		console.log("entre!");
+		Swal.fire({
+			icon: "success",
+			title: `Gracias ${name} por enviar su sonsulta! <br> Su solicitud sera respondida a la brevedad.`,
+			showConfirmButton: false,
+			timer: 2500,
+		});
+	};
 
 	const submitForm = async (values) => {
 		try {
@@ -31,9 +41,7 @@ const Booking = () => {
 						<span><b>Niños: </b> ${values.children}</span><br>
 						<span><b>Email: </b> ${values.email}</span><br>
 						<span><b>Telefono: </b> ${values.phone}</span><br>
-
 						<span><b>Desde: </b> ${values.startDate} <b>Hasta: </b> ${values.endDate}</span><br>
-						
 						</body></html>`,
 				},
 				headers: {
@@ -64,6 +72,8 @@ const Booking = () => {
 				}}
 				onSubmit={(values, { resetForm }) => {
 					submitForm({ ...values, startDate, endDate });
+					swappUp(values.firstName);
+
 					resetForm();
 				}}>
 				{({ isSubmitting, errors }) => (
