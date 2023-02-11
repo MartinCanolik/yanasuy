@@ -19,6 +19,7 @@ const Booking = () => {
 
 	const submitForm = async (values) => {
 		try {
+			console.log("clave ", process.env.REACT_APP_API_KEY);
 			const response = await axios({
 				method: "post",
 				url: "https://api.sendinblue.com/v3/smtp/email",
