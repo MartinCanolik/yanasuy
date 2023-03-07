@@ -3,8 +3,8 @@ import React from "react";
 const Home = () => {
 	return (
 		<div className='flex flex-col mt-[60vh] gap-[30vh]  justify-center'>
-			<div className='flex space-x-5 px-20 items-center max-h-[300px] border-2 border-black'>
-				<div className='w-1/2 relative border-2 border-black w-[500px] h-[300px]'>
+			<div className='flex space-x-5 px-20 items-center max-h-[300px]'>
+				<div className='w-1/2 relative w-[500px] h-[300px]'>
 					<img
 						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676488732/Marco_500x300_logo_wajs4x.png'
 						alt='marco'
@@ -48,20 +48,30 @@ const Home = () => {
 						Ver mas..
 					</button>
 				</div>
-				<div className=' '>
+				<div className='w-1/2 relative w-[500px] h-[300px]'>
+					<img
+						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676488732/Marco_500x300_logo_wajs4x.png'
+						alt='marco'
+						className='absolute'
+					/>
 					<img
 						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404736/habitacion_l3thrt.jpg'
 						alt=''
-						className='max-w-[500px] max-h-[300px] object-cover hover:brightness-150 cursor-pointer'
+						className='w-[420px] h-[220px] right-[40px] top-[40px] rounded-md object-cover hover:brightness-150 cursor-pointer absolute z-10'
 					/>
 				</div>
 			</div>
 			<div className='flex space-x-5 px-20  items-center'>
-				<div className=''>
+				<div className='w-1/2 relative w-[500px] h-[300px]'>
+					<img
+						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676488732/Marco_500x300_logo_wajs4x.png'
+						alt='marco'
+						className='absolute'
+					/>
 					<img
 						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404745/banio_knrd9m.jpg'
 						alt=''
-						className='max-w-[500px] max-h-[300px] object-cover hover:brightness-150 cursor-pointer'
+						className='w-[420px] h-[220px] right-[40px] top-[40px] rounded-md object-cover hover:brightness-150 cursor-pointer absolute z-10'
 					/>
 				</div>
 				<div className='w-1/2 px-3'>
