@@ -7,10 +7,10 @@ import "./Carousel.css";
 const CarouselCustom = () => {
 	const location = useLocation();
 	const images = [
-		"https://yanasuy.com.ar/wp-content/uploads/2019/10/jardin_valle.jpg",
-		"https://yanasuy.com.ar/wp-content/uploads/2019/10/caban%CC%83as-y-pileta_norte.jpg",
-		"https://yanasuy.com.ar/wp-content/uploads/2019/10/lirios_cierra.jpg",
-		"https://yanasuy.com.ar/wp-content/uploads/2019/10/Pile-al-norte.jpg",
+		"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404401/yanasuyVistasierra_kokuei.jpg",
+		"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676403664/piletayplantasCarousel_lf0g4t.jpg",
+		"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404390/yanasuyVistaCabania_llle5i.jpg",
+		"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404371/yanasuyVistaCabania2_kgmrfz.jpg",
 	];
 
 	return (

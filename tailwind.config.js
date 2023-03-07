@@ -9,6 +9,7 @@ module.exports = {
 				secondary: "#ef4444",
 				primary2: "#06b6d4",
 				white: "#f0fdfa",
+				customRed: "#CE2A3A",
 			},
 			fontFamily: {
 				body: ["Merriweather"],

@@ -4,16 +4,26 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import format from "date-fns/format";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { validationSchema } from "../../schema/schema";
 
 const Booking = () => {
 	const [stay, setStay] = useState([]);
-	const swappUp = (name) => {
-		console.log("entre!");
+
+	//alerts
+	const swappUpSuccess = (name) => {
 		Swal.fire({
 			icon: "success",
-			title: `Gracias ${name} por enviar su sonsulta! <br> Su solicitud sera respondida a la brevedad.`,
+			title: `Gracias ${name} por enviar su consulta! <br> Su solicitud sera respondida a la brevedad.`,
 			showConfirmButton: false,
 			timer: 2500,
+		});
+	};
+	const swappUpError = () => {
+		Swal.fire({
+			icon: "error",
+			title: "Oops...",
+			text: "Ha ocurrido un error al intentar enviar el email",
+			footer: '<a href="">Intente con algun medio de contacto alternativo</a>',
 		});
 	};
 
@@ -51,8 +61,11 @@ const Booking = () => {
 					"api-key": process.env.REACT_APP_API_KEY,
 				},
 			});
+			swappUpSuccess(values.firstName);
+
 			console.log(response);
 		} catch (err) {
+			swappUpError();
 			console.log(err);
 		}
 	};
@@ -70,13 +83,15 @@ const Booking = () => {
 					email: "",
 					query: "",
 					phone: "",
+					startDate: startDate,
+					endDate: endDate,
 				}}
 				onSubmit={(values, { resetForm }) => {
-					submitForm({ ...values, startDate, endDate });
-					swappUp(values.firstName);
+					submitForm({ ...values });
 
 					resetForm();
-				}}>
+				}}
+				validationSchema={validationSchema}>
 				{({ isSubmitting, errors }) => (
 					<Form className='w-full max-w-2xl bg-primary mx-auto p-4 flex flex-col justify-center items-center gap-2 my-8 rounded'>
 						<div className='w-full md:w-1/2 px-3 py-3'>
@@ -177,30 +192,6 @@ const Booking = () => {
 						</div>
 						<div className='w-full md:w-1/2 px-3'>
 							<label
-								htmlFor='lastName'
-								className='block tracking-wide text-white text-s font-bold mb-2'>
-								Telefono
-							</label>
-							<Field
-								type='text'
-								name='phone'
-								placeholder='Telefono *'
-								className={
-									errors.lastName
-										? "appearance-none block w-full bg-red-100 text-gray-700 border border-customRed rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-										: "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-								}
-							/>
-							<ErrorMessage name='phone'>
-								{(msg) => (
-									<div className='text-customRed italic pl-1 text-xs font-semibold'>
-										{msg}
-									</div>
-								)}
-							</ErrorMessage>
-						</div>
-						<div className='w-full md:w-1/2 px-3'>
-							<label
 								htmlFor='email'
 								className='block tracking-wide text-white text-s font-bold mb-2'>
 								Email
@@ -216,6 +207,30 @@ const Booking = () => {
 								}
 							/>
 							<ErrorMessage name='email'>
+								{(msg) => (
+									<div className='text-customRed italic pl-1 text-xs font-semibold'>
+										{msg}
+									</div>
+								)}
+							</ErrorMessage>
+						</div>
+						<div className='w-full md:w-1/2 px-3'>
+							<label
+								htmlFor='lastName'
+								className='block tracking-wide text-white text-s font-bold mb-2'>
+								Telefono
+							</label>
+							<Field
+								type='text'
+								name='phone'
+								placeholder='Telefono *'
+								className={
+									errors.lastName
+										? "appearance-none block w-full bg-red-100 text-gray-700 border border-customRed rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+										: "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+								}
+							/>
+							<ErrorMessage name='phone'>
 								{(msg) => (
 									<div className='text-customRed italic pl-1 text-xs font-semibold'>
 										{msg}

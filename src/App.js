@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className='relative'>
 			<NavBar />
-			<div className='!absolute top-2/3 inset-x-[10%]'>
+			<div className='!absolute top-[40vh] inset-x-[10%]'>
 				<CarouselCustom />
 			</div>
 			<Routes>
