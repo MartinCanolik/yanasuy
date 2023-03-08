@@ -93,7 +93,7 @@ const Booking = () => {
 				}}
 				validationSchema={validationSchema}>
 				{({ isSubmitting, errors }) => (
-					<Form className='w-full max-w-2xl bg-primary mx-auto p-4 flex flex-col justify-center items-center gap-2 my-8 rounded'>
+					<Form className='w-full max-w-2xl bg-nav mx-auto p-4 flex flex-col justify-center items-center gap-2 my-8 rounded'>
 						<div className='w-full md:w-1/2 px-3 py-3'>
 							<div className='flex'>
 								<div className='w-1/2 cursor-pointer pr-5'>
@@ -254,7 +254,7 @@ const Booking = () => {
 						<button
 							type='submit'
 							// disabled={isSubmitting}
-							className='bg-secondary hover:bg-primary text-white font-bold py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-secondary hover:border-secondary mt-4  disabled:opacity-5'>
+							className='bg-secondary hover:bg-nav text-white font-bold py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-secondary hover:border-secondary mt-4  disabled:opacity-5'>
 							Enviar
 						</button>
 					</Form>
