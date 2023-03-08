@@ -27,11 +27,11 @@ const DateRangeComp = ({ setStay }) => {
 		calendar();
 	}, [calendar]);
 
-	const unavailableDate = [
-		addDays(new Date(), 8),
-		addDays(new Date(), 9),
-		addDays(new Date(), 10),
-	];
+	// const unavailableDate = [
+	// 	addDays(new Date(), 8),
+	// 	addDays(new Date(), 9),
+	// 	addDays(new Date(), 10),
+	// ];
 
 	// open close
 	const [open, setOpen] = useState(false);

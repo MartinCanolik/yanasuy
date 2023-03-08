@@ -14,6 +14,9 @@ module.exports = {
 			fontFamily: {
 				body: ["Merriweather"],
 			},
+			backgroundImage: {
+				nav: "url('https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302770/BG_vfqqll.jpg')",
+			},
 		},
 	},
 	plugins: [],

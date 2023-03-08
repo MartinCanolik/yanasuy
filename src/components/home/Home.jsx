@@ -1,19 +1,28 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+	const navigate = useNavigate();
+
 	return (
-		<div className='flex flex-col mt-[60vh] gap-[30vh]  justify-center'>
-			<div className='flex space-x-5 px-20 items-center max-h-[300px]'>
-				<div className='w-1/2 relative w-[500px] h-[300px]'>
+		<div className='flex flex-col mt-[40vh] gap-[30vh]  justify-center'>
+			<a href='https://wa.me/+5492664463274' target={"blank"}>
+				<img
+					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678307454/WhatsApp-Logo.wine_cugmui.svg'
+					alt='logo wpp'
+					className='fixed w-[13%] bottom-[1px] right-[1px] cursor-pointer z-100'
+				/>
+			</a>
+			<div className='flex space-x-5 px-20 items-center '>
+				<div className='w-1/2 relative h-[300px] w-[500px] '>
 					<img
-						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676488732/Marco_500x300_logo_wajs4x.png'
+						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 						alt='marco'
 						className='absolute'
 					/>
 					<img
 						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404756/Atardecer_anvcac.jpg'
 						alt='atardecer'
-						className='w-[420px] h-[220px] right-[40px] top-[40px] rounded-md object-cover hover:brightness-150 cursor-pointer absolute z-10'
+						className='object-cover cursor-pointer my-3'
 					/>
 				</div>
 				<div className='w-1/2 px-3'>
@@ -50,28 +59,28 @@ const Home = () => {
 				</div>
 				<div className='w-1/2 relative w-[500px] h-[300px]'>
 					<img
-						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676488732/Marco_500x300_logo_wajs4x.png'
+						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 						alt='marco'
 						className='absolute'
 					/>
 					<img
 						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404736/habitacion_l3thrt.jpg'
-						alt=''
-						className='w-[420px] h-[220px] right-[40px] top-[40px] rounded-md object-cover hover:brightness-150 cursor-pointer absolute z-10'
+						alt='habitacion'
+						className='object-cover w-full h-full cursor-pointer'
 					/>
 				</div>
 			</div>
 			<div className='flex space-x-5 px-20  items-center'>
 				<div className='w-1/2 relative w-[500px] h-[300px]'>
 					<img
-						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676488732/Marco_500x300_logo_wajs4x.png'
+						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 						alt='marco'
 						className='absolute'
 					/>
 					<img
 						src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404745/banio_knrd9m.jpg'
 						alt=''
-						className='w-[420px] h-[220px] right-[40px] top-[40px] rounded-md object-cover hover:brightness-150 cursor-pointer absolute z-10'
+						className='object-cover w-full h-full cursor-pointer'
 					/>
 				</div>
 				<div className='w-1/2 px-3'>
