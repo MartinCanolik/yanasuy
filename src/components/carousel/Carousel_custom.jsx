@@ -26,7 +26,7 @@ const CarouselCustom = () => {
 						images.map((el, idx) => {
 							return (
 								<div key={idx}>
-									<img className='object-cover' src={el} alt={"el"} />
+									<img className='object-cover h-[60vh]' src={el} alt={"el"} />
 								</div>
 							);
 						})}
