@@ -6,6 +6,7 @@ import NavBar from "./components/navBar/NavBar";
 import CarouselCustom from "./components/carousel/Carousel_custom";
 import Contact from "./components/contact/Contact";
 import Booking from "./components/booking/Booking";
+import Footer from "./components/footer/Footer";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 				<Route path='/contacto' element={<Contact />} />
 				<Route path='/reserva' element={<Booking />} />
 			</Routes>
+			<Footer />
 		</div>
 	);
 }

@@ -6,7 +6,8 @@ const logoBooking =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678401479/bookingcom-1_br2vnl.svg";
 const logoGoogle =
 	"https://documents.reverso.net/img/new_design/icons/ic-google.svg";
-const estrellas = "https://www.finistarmor.com/images/five-stars.png";
+const estrellas =
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678539690/five-stars_tulo1k.png";
 // const formatedReviews = [];
 
 // const handleFormatReviews = () => {
@@ -171,7 +172,7 @@ const Home = () => {
 			</div>
 			<div className=' flex flex-col items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[100vh]'>
 				<div>
-					<h1 className='bg-black/50  p-3 mt-5 text-white text-2xl rounded'>
+					<h1 className='bg-black/50  p-3 mt-5 text-white font-body text-xl rounded'>
 						Nuestros huespedes andan diciendo ...
 					</h1>
 				</div>
