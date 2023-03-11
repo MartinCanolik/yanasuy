@@ -172,7 +172,7 @@ const Home = () => {
 			</div>
 			<div className=' flex flex-col items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[100vh]'>
 				<div>
-					<h1 className='bg-black/50  p-3 mt-5 text-white font-body text-xl rounded'>
+					<h1 className='bg-black/50  p-3 mt-5 text-white text-xl rounded'>
 						Nuestros huespedes andan diciendo ...
 					</h1>
 				</div>

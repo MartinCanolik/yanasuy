@@ -15,10 +15,18 @@ const Footer = () => {
 				<img src={logoFooter} alt='logo footer' />
 			</div>
 			<div className='flex gap-[30px]'>
-				<a href='' className=' text-white'>
+				<a
+					target={"_blank"}
+					href='https://www.instagram.com/cabanasyanasuy/'
+					className=' text-white'
+					rel='noreferrer'>
 					<BsInstagram size={"2em"} />
 				</a>
-				<a href='' className=' text-white'>
+				<a
+					target={"_blank"}
+					href='https://www.facebook.com/search/top/?q=merlo%20san%20luis%20yanasuy%20caba%C3%B1as'
+					className=' text-white'
+					rel='noreferrer'>
 					<BsFacebook size={"2em"} />
 				</a>
 				<a href='' className=' text-white'>
