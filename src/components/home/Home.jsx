@@ -44,7 +44,7 @@ const Home = () => {
 						<h1 className='p-5 m-auto text-white text-center text-2xl font-body bg-brown rounded-xl w-[500px]'>
 							Cabaña Norte
 						</h1>
-						<div className='relative h-[300px] w-[500px] cursor-pointer '>
+						<div className='relative h-[300px] w-[500px] cursor-pointer overflow-hidden '>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 								alt='marco'
@@ -61,7 +61,7 @@ const Home = () => {
 						<div className='p-5 m-auto text-white text-center text-xl font-body bg-brown rounded-xl w-[500px]'>
 							<h1>Cabaña Sur</h1>
 						</div>
-						<div className='relative w-[500px] h-[300px]'>
+						<div className='relative w-[500px] h-[300px] overflow-hidden'>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 								alt='marco'
@@ -187,7 +187,7 @@ const Home = () => {
 										/>
 										<h2 className='h-1/3 text-white text-xl mt-1'>Romina: </h2>
 									</div>
-									<div className='h-[43%] py-3 px-5 '>
+									<div className='h-[43%] py-3 px-5 overflow-auto '>
 										<p className='text-xm text-white my-3 text-center'>
 											" Una paz increible y una belleza unica. Si tengo que
 											comparalo con "algo", seria con la receta de la abuela que
@@ -207,7 +207,7 @@ const Home = () => {
 										/>
 										<h2 className='text-white h-1/3 text-xl mt-1'>Maria: </h2>
 									</div>
-									<div className='h-[43%]  py-3 px-5'>
+									<div className='h-[43%]  py-3 px-5 overflow-auto'>
 										<p className='text-xm text-white my-3 text-center'>
 											" Impecable y muy cálida la atención de Marcela. Hermosa
 											la propiedad y las vistas de las sierras y del valle. Los

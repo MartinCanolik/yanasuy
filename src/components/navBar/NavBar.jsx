@@ -22,7 +22,7 @@ const NavBar = () => {
 				<li
 					onClick={() => navigate("/reserva")}
 					className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'>
-					<a className='list-link'>RESERVAS</a>
+					<a className='list-link'>PROMOCIONES</a>
 				</li>
 				<li
 					className='flex gap-20 text-white text-lg
