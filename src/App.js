@@ -7,11 +7,13 @@ import CarouselCustom from "./components/carousel/Carousel_custom";
 import Contact from "./components/contact/Contact";
 import Booking from "./components/booking/Booking";
 import Footer from "./components/footer/Footer";
+import Watsapp from "./components/logoWpp/Watsapp";
 
 function App() {
 	return (
 		<div className='relative'>
 			<NavBar />
+			<Watsapp />
 			<div className='!absolute top-[40vh] inset-x-[10%]'>
 				<CarouselCustom />
 			</div>

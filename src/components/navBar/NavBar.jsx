@@ -13,7 +13,7 @@ const NavBar = () => {
 					<a className='list-link'>MERLO </a>
 				</li>
 				<li className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'>
-					<a className='list-link'>CABAÑA</a>
+					<a className='list-link'>CABAÑAS</a>
 				</li>
 				<div className='cursor-pointer' onClick={() => navigate("/")}>
 					<img className='max-h-[25vh]' src={`${Logo}`} alt='logo cabanias' />

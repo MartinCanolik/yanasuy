@@ -121,3 +121,67 @@ export const Reviews = [
 			"Un lugar encantador, la vista es hermosa, las cabañas un espectáculo, y los dueños excelentes y muy atentos. Totalmente recomendable.",
 	},
 ];
+
+//La idea es renderizar de a 3 comentarios por lo que divido el arr en 3 y guardo el codigo html agrupado de a 3 reviews,
+// para luego con un solo map renderizar en el carousel en ese formato
+
+// const formatedReviews = [];
+
+// const handleFormatReviews = () => {
+// 	for (let i = 0; i < Reviews.length / 3; i++) {
+// 		const groupedReviews = `<div className='w-1/3 border-2 border-white p-3 px-3'>
+// 		<img
+// 		src=${Reviews[i].logo}
+// 			alt='logo'
+// 			className='h-20 opacity-70 my-3'
+// 		/>
+// 		<h2 className='text-white text-xl my-3'>${Reviews[i].name}</h2>
+// 		<p className='text-xm text-white my-3 text-center'>
+// 		${Reviews[i].review}
+// 		</p>
+// 		<h2 className='text-white text-3xl my-3'>${Reviews[i].rating}</h2>
+// 		<div>${Reviews[i].stars}</div>
+
+// 	</div>
+// 	<div className='w-1/3 border-2 border-white p-3 px-3'>
+// 		<img
+// 		src=${Reviews[i + 1].logo}
+// 			alt='logo'
+// 			className='h-20 opacity-70 my-3'
+// 		/>
+// 		<h2 className='text-white text-xl my-3'>${Reviews[i + 1].name}</h2>
+// 		<p className='text-xm text-white my-3 text-center'>
+// 			${Reviews[i + 1].review}
+// 		</p>
+// 		<h2 className='text-white text-3xl my-3'>${Reviews[i + 1].rating}</h2>
+// 		<div>${Reviews[i + 1].stars}</div>
+
+// 	</div>
+// 	<div className='w-1/3 border-2 border-white p-3 px-3'>
+// 		<img
+// 		src=${Reviews[i + 2].logo}
+// 			alt='logo'
+// 			className='h-20 opacity-70 my-3'
+// 		/>
+// 		<h2 className='text-white text-xl my-3'>${Reviews[i + 2].name}</h2>
+// 		<p className='text-xm text-white my-3 text-center'>
+// 			${Reviews[i + 2].review}
+// 		</p>
+// 		<h2 className='text-white text-3xl my-3'>${Reviews[i + 2].rating}</h2>
+// 		<div>${Reviews[i + 2].stars}</div>
+
+// 	</div>
+// 	`;
+// 		formatedReviews.push(groupedReviews);
+// 	}
+// };
+// function convertToPlain(html) {
+// 	// Create a new div element
+// 	var tempDivElement = document.createElement("div");
+
+// 	// Set the HTML content with the given value
+// 	tempDivElement.innerHTML = html;
+
+// 	// Retrieve the text property of the element
+// 	return tempDivElement.textContent || tempDivElement.innerText || "";
+// }
