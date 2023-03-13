@@ -49,8 +49,9 @@ const Footer = () => {
 						Arg.
 					</li>
 					<li className='flex gap-3'>
-						<FaEnvelope /> Email: info@yanasuy.com
+						<FaEnvelope /> Email: yanasuy@gmail.com
 					</li>
+
 					<li className='flex gap-3'>
 						<FaPhoneAlt /> Telefono: +54 9 266 446-3274
 					</li>

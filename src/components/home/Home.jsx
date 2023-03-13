@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Reviews } from "../../assets/reviews";
-const logoBooking =
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678401479/bookingcom-1_br2vnl.svg";
-const logoGoogle =
-	"https://documents.reverso.net/img/new_design/icons/ic-google.svg";
-const estrellas =
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678539690/five-stars_tulo1k.png";
+import {
+	logoBooking,
+	logoGoogle,
+	estrellas,
+	arboles,
+} from "../../assets/Assets";
 
 const Home = () => {
 	// useEffect(() => {
@@ -16,10 +16,10 @@ const Home = () => {
 
 	return (
 		<>
-			<div className='flex justify-center items-center p-5 m-auto text-white text-2xl font-body mt-[40vh] bg-brown h-[45%] w-full '>
-				<h1>Nuestras Cabañas</h1>
+			<div className='flex justify-center rounded-xl items-center p-5 m-auto text-white text-2xl font-body mt-[40vh] bg-brown h-[45%] w-[50%] '>
+				<h1>Nuestra Historia</h1>
 			</div>
-			<div className='flex flex-col bg-nav p-5 mt-[15vh] m-auto rounded-lg h-[30vw] w-[60vw] '>
+			{/* <div className='flex flex-col bg-nav p-5 mt-[15vh] m-auto rounded-lg h-[30vw] w-[60vw] '>
 				<div className='bg-black/25 mt-5 p-5 rounded-lg'>
 					<h1 className='text-white text-1xl font-body'>
 						CABAÑAS DE PIEDRA Y TRONCO
@@ -36,12 +36,56 @@ const Home = () => {
 						el entorno natural, la calidez y la frescura de la Sierras.
 					</p>
 				</div>
+			</div> */}
+			<div className='flex mt-[20vh] items-center'>
+				<div className=' w-1/4'>
+					<img src={arboles} alt='' className='object-cover' />
+				</div>
+				<div className='flex items-center justify-center bg-nav p-5 m-auto rounded-lg h-[45vh] w-[60vw] '>
+					<div className='flex items-center text-white text-xm bg-black/25 my-5 mx-5 px-10 py-5 rounded-lg'>
+						<p className='leading-7 my-auto'>
+							Tras recorrer nuestro increíble país, nos decidimos por Merlo, un
+							lugar increíble lleno de magia, paraíso natural. Declarado TERCER
+							MICLOCLIMA DE MUNDO y PRIMEROS EN CÁLIDAD AMBIENTAL.
+							Emprendimiento familiar dedicados al servicio turístico, brindando
+							una cálida y personalizada atención. Ofreciendo lo mejor de
+							nosotros para que tú paso por este maravilloso lugar sea
+							inolvidable. “YANASUY” significa MI GRAN AMIGO Es por esto nuestro
+							profundo deseo es que cuando regresen a sus hogares sientan que
+							hicimos una linda amistad.
+						</p>
+					</div>
+				</div>
+				<div className=' w-1/4 '>
+					<img src={arboles} alt='object-cover' />
+				</div>
+			</div>
+			<div className='flex justify-center items-center rounded-xl p-5 m-auto text-white text-2xl font-body mt-[20vh] bg-brown h-[45%] w-full '>
+				<h1>Nuestras Cabañas</h1>
+			</div>
+			<div className='flex flex-col justify-center bg-nav px-5 mt-[15vh] m-auto rounded-lg h-[40vh] w-[60vw] '>
+				<div className='bg-black/25  p-5 rounded-lg '>
+					<h1 className='text-white text-1xl font-body'>
+						CABAÑAS DE PIEDRA Y TRONCO
+					</h1>
+				</div>
+				<div className='text-white text-xm bg-black/25 mt-5 p-5 rounded-lg'>
+					<h3 className=''>
+						Complejo de dos cabañas hasta 5 personas cada una
+					</h3>
+					<p className='leading-6 mt-2'>
+						Pensando en el bienestar y la comodidad de nuestras queridas
+						familias decidimos construir nuestras cabañas en dos plantas con
+						paredes firmes aislantes revestidas con PIEDRA Y TRONCOS respetando
+						el entorno natural, la calidez y la frescura de la Sierras.
+					</p>
+				</div>
 			</div>
 
 			<div className='flex flex-col mt-[10vh] justify-center'>
 				<div className='flex justify-center gap-[10vw] items-center'>
 					<div className='flex flex-col gap-10'>
-						<h1 className='p-5 m-auto text-white text-center text-2xl font-body bg-brown rounded-xl w-[500px]'>
+						<h1 className='p-5 m-auto text-white text-center text-xl font-body bg-brown rounded-xl w-[500px]'>
 							Cabaña Norte
 						</h1>
 						<div className='relative h-[300px] w-[500px] cursor-pointer overflow-hidden '>
@@ -52,7 +96,7 @@ const Home = () => {
 							/>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678662425/cabania_sur_m8pjh0.jpg'
-								alt='atardecer'
+								alt='cabamoa norte'
 								className='object-cover cursor-pointer h-[300px] w-[500px]'
 							/>
 						</div>
@@ -75,6 +119,66 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
+				<div className='flex justify-center items-center p-5 m-auto text-white text-2xl font-body mt-[20vh] bg-brown h-[45%] w-full '>
+					<h1>Nuestro Parque</h1>
+				</div>
+				<div className='flex flex-col justify-center bg-nav px-5 mt-[15vh] m-auto rounded-lg h-[45vh] w-[60vw] '>
+					<div className='bg-black/25 mt-10  p-5 rounded-lg '>
+						<h1 className='text-white text-1xl font-body'>
+							UNA HECTÀREA PARQUIZADA
+						</h1>
+					</div>
+					<div className='text-white text-xm bg-black/25 mt-5 mb-10 p-5 rounded-lg'>
+						<p className='leading-6 mt-2'>
+							Te espera una increíble hectárea con VISTA PANÓRAMICA A LA SIERRA
+							DE LOS COMECHINGONES. Un amplio parque con una hermosa PISCINA CON
+							YACUZZI de 18 metros x 8 metros rodeada por almendros y molles.
+							Con reposeras y lugar de descanso. QUINCHO de 8 metros x 5 metros,
+							con mesones y sillones de madera y una mesa de Ping Pong para que
+							puedan divertirse en familia. ARCOS DE FUTBOL Y HAMACA SECTOR
+							DEJEMOS HUELLAS BONITAS, hermoso sector para crear arte y
+							recuerdos. SECTOR DE DESCANSO Y LECTURA o bien para tomar unos
+							ricos mates rodeado de molles que le da una hermosa sombra
+						</p>
+					</div>
+				</div>
+				<div className='flex justify-center gap-[10vw] mt-[10vh] items-center'>
+					<div className='flex flex-col gap-10'>
+						<h1 className='p-5 m-auto text-white text-center text-xl font-body bg-brown rounded-xl w-[500px]'>
+							Piscina
+						</h1>
+						<div className='relative h-[300px] w-[500px] cursor-pointer overflow-hidden '>
+							<img
+								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
+								alt='marco'
+								className='absolute'
+							/>
+							<img
+								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678739213/piscinaYanasuy_nqvh3b.jpg'
+								alt='piscina'
+								className='object-cover cursor-pointer h-[300px] w-[500px]'
+							/>
+						</div>
+					</div>
+					<div className='flex flex-col gap-10 cursor-pointer'>
+						<div className='p-5 m-auto text-white text-center text-xl font-body bg-brown rounded-xl w-[500px]'>
+							<h1>Parque</h1>
+						</div>
+						<div className='relative w-[500px] h-[300px] overflow-hidden'>
+							<img
+								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
+								alt='marco'
+								className='absolute'
+							/>
+							<img
+								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678739213/parqueYanasuy_ygucru.jpg'
+								alt='parque'
+								className='object-cover m-auto mt-5 w-[450px] h-[250px] cursor-pointer'
+							/>
+						</div>
+					</div>
+				</div>
+
 				{/* <div className='flex space-x-5 px-20 items-center '>
 				<div className='w-1/2 relative h-[300px] w-[500px] '>
 					<img
@@ -162,7 +266,7 @@ const Home = () => {
 					</button>
 				</div>
 			</div> */}
-				<div className='flex justify-center items-center p-5 m-auto text-white text-2xl font-body mt-[15vw] bg-brown h-[45%] w-full '>
+				<div className='flex justify-center items-center rounded-xl mb-5 p-5 m-auto text-white text-2xl font-body mt-[15vw] bg-brown h-[45%] w-[60vw] '>
 					<h1>Nuestros huespedes andan diciendo ...</h1>
 				</div>
 				<div className=' flex flex-col items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[100vh]'>
