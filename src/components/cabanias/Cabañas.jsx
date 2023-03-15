@@ -30,7 +30,7 @@ const Cabañas = () => {
 							</h1>
 						</div>
 						<hr className='border-2 border-slate-300 mt-2' />
-						<p className='text-slate-500 leading-7 pt-5 font-normal'>
+						<p className='text-slate-500 leading-7 pt-5 font-medium'>
 							“BALCÓN A LA SIERRA DE LOS COMENCHINGONES” espectacular vista
 							panorámica a la sierra y al valle. <br />
 							<br />
@@ -79,21 +79,23 @@ const Cabañas = () => {
 							</h1>
 						</div>
 						<hr className='border-2 border-slate-300 mt-2' />
-						<p className='text-slate-500 leading-7 pt-5 font-normal'>
+						<p className='text-slate-500 leading-7 pt-5 font-medium'>
 							“BALCÓN CON VISTA INCREIBLE AL VALLE DEL CONLARA” con una
-							espectacular vista a la sierra y al valle. PLANTA ALTA Cocina
-							totalmente equipada, Cocina con horno, Microondas, Heladera con
-							Frezzer, Pava eléctrica, cafetera eléctrica, tostadora eléctrica.
-							Vasija, utensillos de cocina, ollas, fuentes de horno Aire
-							acordonado frio-calor Tv con DIRECTV y Crhromecast Comedor con
-							mesa de “algarrobo con seis sillas y Sector de living con sillones
-							para un buen descanso. PLANTA BAJA Dos habitaciones confortables
-							amplias y luminosas con vista a la sierra. Camas matrimonial queen
-							size con colchón de resorte y camas individuales también con
-							colchón de resorte. Extra carro con colchón de goma espuma. Mesas
-							de luz. Placard. Mueble. Extra practicuna. Baño con inodoro,
-							bidet, pileta y ducha PARRILLA INDIVIDUAL con parrilla y
-							accesorios. COCHERA INDIVIDUAL
+							espectacular vista a la sierra y al valle. <br />
+							<br /> PLANTA ALTA Cocina totalmente equipada, Cocina con horno,
+							Microondas, Heladera con Frezzer, Pava eléctrica, cafetera
+							eléctrica, tostadora eléctrica.
+							<br /> <br /> Vasija, utensillos de cocina, ollas, fuentes de
+							horno Aire acordonado frio-calor Tv con DIRECTV y Crhromecast
+							Comedor con mesa de “algarrobo con seis sillas y Sector de living
+							con sillones para un buen descanso.
+							<br /> <br /> PLANTA BAJA Dos habitaciones confortables amplias y
+							luminosas con vista a la sierra. Camas matrimonial queen size con
+							colchón de resorte y camas individuales también con colchón de
+							resorte. Extra carro con colchón de goma espuma. Mesas de luz.
+							Placard. Mueble. Extra practicuna. Baño con inodoro, bidet, pileta
+							y ducha PARRILLA INDIVIDUAL con parrilla y accesorios. COCHERA
+							INDIVIDUAL
 						</p>
 					</div>
 				</div>
@@ -101,55 +103,6 @@ const Cabañas = () => {
 					<Booking />
 				</div>
 			</div>
-
-			{/* <div className='flex'>
-				<div className='w-1/2'>
-					<Carousel
-						autoPlay={true}
-						showThumbs={false}
-						showIndicators={true}
-						infiniteLoop={true}
-						showStatus={false}>
-						{norteImg &&
-							norteImg.map((el, idx) => {
-								return (
-									<div key={idx}>
-										<img
-											className='object-cover h-[60vh]'
-											src={el}
-											alt={"el"}
-										/>
-									</div>
-								);
-							})}
-					</Carousel>
-				</div>
-				<div className='w-1/2'>
-					<Booking />
-				</div>
-				<div>
-					<div>
-						<h1>Cabaña Norte</h1>
-					</div>
-					<hr />
-					<p>
-						“BALCÓN CON VISTA INCREIBLE AL VALLE DEL CONLARA” con una
-						espectacular vista a la sierra y al valle. PLANTA ALTA Cocina
-						totalmente equipada, Cocina con horno, Microondas, Heladera con
-						Frezzer, Pava eléctrica, cafetera eléctrica, tostadora eléctrica.
-						Vasija, utensillos de cocina, ollas, fuentes de horno Aire
-						acordonado frio-calor Tv con DIRECTV y Crhromecast Comedor con mesa
-						de “algarrobo con seis sillas y Sector de living con sillones para
-						un buen descanso. PLANTA BAJA Dos habitaciones confortables amplias
-						y luminosas con vista a la sierra. Camas matrimonial queen size con
-						colchón de resorte y camas individuales también con colchón de
-						resorte. Extra carro con colchón de goma espuma. Mesas de luz.
-						Placard. Mueble. Extra practicuna. Baño con inodoro, bidet, pileta y
-						ducha PARRILLA INDIVIDUAL con parrilla y accesorios. COCHERA
-						INDIVIDUAL
-					</p>
-				</div>
-			</div> */}
 		</div>
 	);
 };

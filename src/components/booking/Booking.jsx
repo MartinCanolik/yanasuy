@@ -93,7 +93,7 @@ const Booking = () => {
 				}}
 				validationSchema={validationSchema}>
 				{({ isSubmitting, errors }) => (
-					<Form className='w-full bg-nav h-[590px] justify-center items-center px-4 flex flex-col gap-3 rounded'>
+					<Form className='w-full bg-nav h-[585px] justify-center items-center px-4 flex flex-col gap-3 rounded'>
 						<h1 className='tracking-wide text-white mb-5 text-2xl font-bold '>
 							Reserva
 						</h1>
