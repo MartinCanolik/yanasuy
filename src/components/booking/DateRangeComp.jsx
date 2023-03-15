@@ -65,7 +65,7 @@ const DateRangeComp = ({ setStay }) => {
 	return (
 		<div className='calendarWrap w-full md:w-1/2 px-3'>
 			<input
-				className='cursor-pointer block appearance-none w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+				className='cursor-pointer text-sm mt-2 py-2 px-3 appearance-none bg-gray-200 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500'
 				value={`${format(range[0].startDate, "dd/MM/yyyy")} - ${format(
 					range[0].endDate,
 					"dd/MM/yyyy"

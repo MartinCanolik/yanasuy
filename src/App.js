@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import Booking from "./components/booking/Booking";
 import Footer from "./components/footer/Footer";
 import Watsapp from "./components/logoWpp/Watsapp";
+import Cabañas from "./components/cabanias/Cabañas";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/contacto' element={<Contact />} />
 				<Route path='/reserva' element={<Booking />} />
+				<Route path='/cabañas' element={<Cabañas />} />
 			</Routes>
 			<Footer />
 		</div>

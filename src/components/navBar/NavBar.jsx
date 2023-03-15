@@ -12,7 +12,9 @@ const NavBar = () => {
 				<li className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'>
 					<a className='list-link'>MERLO </a>
 				</li>
-				<li className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'>
+				<li
+					className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'
+					onClick={() => navigate("/cabañas")}>
 					<a className='list-link'>CABAÑAS</a>
 				</li>
 				<div className='cursor-pointer' onClick={() => navigate("/")}>
