@@ -1,7 +1,6 @@
-.calendarWrap {
-	display: flex;
+/* .calendarWrap {
 	position: relative;
-}
+} */
 
 .calendarElement {
 	position: absolute;

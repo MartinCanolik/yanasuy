@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Booking from "../booking/Booking";
 import { Carousel } from "react-responsive-carousel";
 import { norteImg, surImg } from "../../assets/Assets";
+import { useParams } from "react-router-dom";
 
 const Cabañas = () => {
+	const { name } = useParams();
+	console.log(name);
+
+	//to find scrool y
+
+	// window.addEventListener("scroll", function () {
+	// 	console.log(this.scrollY);
+	// });
+
+	const scrollTO = () => {
+		if (name === "sur") {
+			window.scrollTo(0, 291);
+		}
+		if (name === "norte") {
+			window.scrollTo(0, 1823);
+		}
+	};
+
+	useEffect(() => {
+		scrollTO();
+	}, []);
+
 	return (
 		<div>
+			<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
+				<div className='flex flex-col justify-center items-center rounded-xl p-5 m-auto text-white text-3xl font-body bg-black/50 w-[50vw] '>
+					<h1>Cabaña Sur</h1>
+				</div>
+			</div>
 			<div className='flex justify-center px-[8vw] gap-10  mt-20'>
 				<div className='flex flex-col w-[75%] justify-center'>
 					<Carousel
@@ -30,29 +58,60 @@ const Cabañas = () => {
 							</h1>
 						</div>
 						<hr className='border-2 border-slate-300 mt-2' />
-						<p className='text-slate-500 leading-7 pt-5 font-medium'>
+						<p className='my-5 text-slate-500 leading-7 pt-5 font-medium'>
 							“BALCÓN A LA SIERRA DE LOS COMENCHINGONES” espectacular vista
-							panorámica a la sierra y al valle. <br />
-							<br />
-							PLANTA ALTA Cocina totalmente equipada, Cocina con horno,
-							Microondas, Heladera con Frezzer, Pava eléctrica, cafetera
-							eléctrica, tostadora eléctrica. Vasija, utensilios de cocina,
-							ollas, fuentes de horno Aire acondionado frio-calor Tv con DIRECTV
-							y Crhromecast Comedor con mesa de “algarrobo con seis sillas y
-							Sector de living con sillones para un buen descanso. <br /> <br />
-							PLANTA BAJA Dos habitaciones confortables amplias y luminosas con
-							vista a la sierra. <br />
-							<br />
-							Camas matrimonial queen size con colchón de resorte y camas
-							individuales también con colchón de resorte. Extra carro con
-							colchón de goma espuma. Mesas de luz. Placard. Mueble. Extra
-							practicuna. PARRILLA INDIVIDUAL con parrilla y accesorios. COCHERA
-							INDIVIDUAL
+							panorámica a la sierra y al valle.
 						</p>
+						<div className='flex gap-20'>
+							<div>
+								<h2 className='text-slate-700 text-xl leading-7 pt-5 font-bold'>
+									Planta Alta
+								</h2>
+								<ul className='text-slate-500 leading-7 pt-5 font-medium list-disc'>
+									<li>Microondas.</li>
+									<li>Heladera con Frezzer.</li>
+									<li>Pava eléctrica.</li>
+									<li>Cafetera eléctrica.</li>
+									<li>Tostadora eléctrica.</li>
+									<li>
+										Vasija, utensilios de cocina, ollas, fuentes de horno.
+									</li>
+									<li>Aire acondionado frio-calor.</li>
+									<li>Tv con DIRECTV y Crhromecast. WIFI.</li>
+									<li>Comedor con mesa de “algarrobo con seis sillas.</li>
+									<li> Sector de living con sillones para un buen descanso.</li>
+								</ul>
+							</div>
+							<div>
+								<h2 className='text-slate-700 text-xl leading-7 pt-5 font-bold'>
+									Planta Baja
+								</h2>
+								<ul className='text-slate-500 leading-7 pt-5 font-medium list-disc'>
+									<li>
+										Dos habitaciones confortables amplias y luminosas con vista
+										a la sierra.
+									</li>
+									<li>Camas matrimonial queen size con colchón de resorte </li>
+									<li>Camas individuales también con colchón de resorte.</li>
+									<li>Extra carro con colchón de goma espuma.</li>
+									<li>Mesas de luz</li>
+									<li>Placard. Mueble</li>
+									<li>Extra practicuna.</li>
+									<li>Caja de seguridad</li>
+									<li>Baño con inodoro, bidet y ducha</li>
+									<li> Secador de pelo</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className='w-1/2 '>
 					<Booking />
+				</div>
+			</div>
+			<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
+				<div className='flex flex-col justify-center items-center rounded-xl p-5 m-auto text-white text-3xl font-body bg-black/50 w-[50vw] '>
+					<h1>Cabaña Norte</h1>
 				</div>
 			</div>
 			<div className='flex justify-center px-[8vw] gap-10  mt-10'>
@@ -79,24 +138,51 @@ const Cabañas = () => {
 							</h1>
 						</div>
 						<hr className='border-2 border-slate-300 mt-2' />
-						<p className='text-slate-500 leading-7 pt-5 font-medium'>
+						<p className='my-5 text-slate-500 leading-7 pt-5 font-medium'>
 							“BALCÓN CON VISTA INCREIBLE AL VALLE DEL CONLARA” con una
-							espectacular vista a la sierra y al valle. <br />
-							<br /> PLANTA ALTA Cocina totalmente equipada, Cocina con horno,
-							Microondas, Heladera con Frezzer, Pava eléctrica, cafetera
-							eléctrica, tostadora eléctrica.
-							<br /> <br /> Vasija, utensillos de cocina, ollas, fuentes de
-							horno Aire acordonado frio-calor Tv con DIRECTV y Crhromecast
-							Comedor con mesa de “algarrobo con seis sillas y Sector de living
-							con sillones para un buen descanso.
-							<br /> <br /> PLANTA BAJA Dos habitaciones confortables amplias y
-							luminosas con vista a la sierra. Camas matrimonial queen size con
-							colchón de resorte y camas individuales también con colchón de
-							resorte. Extra carro con colchón de goma espuma. Mesas de luz.
-							Placard. Mueble. Extra practicuna. Baño con inodoro, bidet, pileta
-							y ducha PARRILLA INDIVIDUAL con parrilla y accesorios. COCHERA
-							INDIVIDUAL
+							espectacular vista a la sierra y al valle.
 						</p>
+						<div className='flex gap-20'>
+							<div>
+								<h2 className='text-slate-700 text-xl leading-7 pt-5 font-bold'>
+									Planta Alta
+								</h2>
+								<ul className='text-slate-500 leading-7 pt-5 font-medium list-disc'>
+									<li>Microondas.</li>
+									<li>Heladera con Frezzer.</li>
+									<li>Pava eléctrica.</li>
+									<li>Cafetera eléctrica.</li>
+									<li>Tostadora eléctrica.</li>
+									<li>
+										Vasija, utensilios de cocina, ollas, fuentes de horno.
+									</li>
+									<li>Aire acondionado frio-calor.</li>
+									<li>Tv con DIRECTV y Crhromecast. WIFI.</li>
+									<li>Comedor con mesa de “algarrobo con seis sillas.</li>
+									<li> Sector de living con sillones para un buen descanso.</li>
+								</ul>
+							</div>
+							<div>
+								<h2 className='text-slate-700 text-xl leading-7 pt-5 font-bold'>
+									Planta Baja
+								</h2>
+								<ul className='text-slate-500 leading-7 pt-5 font-medium list-disc'>
+									<li>
+										Dos habitaciones confortables amplias y luminosas con vista
+										a la sierra.
+									</li>
+									<li>Camas matrimonial queen size con colchón de resorte </li>
+									<li>Camas individuales también con colchón de resorte.</li>
+									<li>Extra carro con colchón de goma espuma.</li>
+									<li>Mesas de luz</li>
+									<li>Placard. Mueble</li>
+									<li>Extra practicuna.</li>
+									<li>Caja de seguridad</li>
+									<li>Baño con inodoro, bidet y ducha</li>
+									<li> Secador de pelo</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className='w-1/2 '>

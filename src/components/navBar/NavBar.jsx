@@ -2,10 +2,15 @@
 import React from "react";
 import Logo from "../../assets/A color letras blancas.png";
 import { useNavigate, useLocation } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const NavBar = () => {
 	const navigate = useNavigate();
 	const location = useLocation();
+
+	const alertPromotions = () => {
+		Swal.fire("Lo sentimos, aun no hay promociones disponibles");
+	};
 	return (
 		<nav className={location.pathname === "/" ? "bg-nav h-[70vh]" : "bg-nav"}>
 			<ul className='flex justify-evenly items-center py-10'>
@@ -22,7 +27,7 @@ const NavBar = () => {
 				</div>
 
 				<li
-					onClick={() => navigate("/reserva")}
+					onClick={() => alertPromotions()}
 					className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'>
 					<a className='list-link'>PROMOCIONES</a>
 				</li>

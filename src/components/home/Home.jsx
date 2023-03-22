@@ -2,10 +2,12 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Reviews } from "../../assets/reviews";
 import Comments from "../comments/Comments";
+import { useNavigate } from "react-router-dom";
 
 import { arboles } from "../../assets/Assets";
 
 const Home = () => {
+	const navigate = useNavigate();
 	return (
 		<>
 			<div className='flex justify-center rounded-xl items-center py-5 m-auto text-white text-2xl font-body mt-[40vh] bg-brown h-[45%] w-[890px] '>
@@ -17,17 +19,17 @@ const Home = () => {
 					<img src={arboles} alt='' className='object-cover' />
 				</div>
 				<div className='flex items-center justify-center bg-nav p-5 m-auto rounded-lg h-[400px] w-[1000px] '>
-					<div className='flex items-center text-white text-xm bg-black/25 my-5 mx-5 px-10 py-10 rounded-lg'>
+					<div className='flex items-center text-white text-md bg-black/25 my-5 mx-5 px-10 py-10 rounded-lg'>
 						<p className='leading-7 my-auto'>
 							Tras recorrer nuestro increíble país, nos decidimos por Merlo, un
 							lugar increíble lleno de magia, paraíso natural. Declarado TERCER
-							MICLOCLIMA DE MUNDO y PRIMEROS EN CÁLIDAD AMBIENTAL.
+							MICLOCLIMA DE MUNDO y PRIMEROS EN CÁLIDAD AMBIENTAL. <br /> <br />
 							Emprendimiento familiar dedicados al servicio turístico, brindando
-							una cálida y personalizada atención. Ofreciendo lo mejor de
-							nosotros para que tú paso por este maravilloso lugar sea
-							inolvidable. “YANASUY” significa MI GRAN AMIGO Es por esto nuestro
-							profundo deseo es que cuando regresen a sus hogares sientan que
-							hicimos una linda amistad.
+							una cálida y personalizada atención. <br /> <br />
+							<div className='text-center'>
+								“YANASUY” significa MI GRAN AMIGO <br /> DONDE LLEGA UN TURISTA
+								Y SE VA UN AMIGO
+							</div>
 						</p>
 					</div>
 				</div>
@@ -48,7 +50,7 @@ const Home = () => {
 					<h3 className=''>
 						Complejo de dos cabañas hasta 5 personas cada una
 					</h3>
-					<p className='leading-6 mt-2'>
+					<p className='leading-7 text-md mt-2'>
 						Pensando en el bienestar y la comodidad de nuestras queridas
 						familias decidimos construir nuestras cabañas en dos plantas con
 						paredes firmes aislantes revestidas con PIEDRA Y TRONCOS respetando
@@ -63,33 +65,37 @@ const Home = () => {
 						<h1 className='p-5 m-auto text-white text-center text-xl font-body bg-brown rounded-xl w-[500px]'>
 							Cabaña Norte
 						</h1>
-						<div className='relative h-[300px] w-[500px] cursor-pointer overflow-hidden '>
+						<div
+							className='relative h-[300px] w-[500px] cursor-pointer overflow-hidden '
+							onClick={() => navigate("/cabañas/norte")}>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 								alt='marco'
-								className='absolute'
+								className='absolute transform transition-all duration-300 hover:scale-150'
 							/>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678662425/cabania_sur_m8pjh0.jpg'
 								alt='cabamoa norte'
-								className='object-cover cursor-pointer h-[300px] w-[500px]'
+								className='object-cover cursor-pointer w-full h-full'
 							/>
 						</div>
 					</div>
-					<div className='flex flex-col gap-10 cursor-pointer'>
+					<div className='flex flex-col gap-10'>
 						<div className='p-5 m-auto text-white text-center text-xl font-body bg-brown rounded-xl w-[500px]'>
 							<h1>Cabaña Sur</h1>
 						</div>
-						<div className='relative w-[500px] h-[300px] overflow-hidden'>
+						<div
+							className='relative w-[500px] h-[300px] overflow-hidden cursor-pointer'
+							onClick={() => navigate("/cabañas/sur")}>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 								alt='marco'
-								className='absolute'
+								className='absolute transform transition-all duration-300 hover:scale-150'
 							/>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404736/habitacion_l3thrt.jpg'
 								alt='habitacion'
-								className='object-cover w-full h-full cursor-pointer'
+								className=' object-cover w-full h-full   '
 							/>
 						</div>
 					</div>
@@ -104,7 +110,7 @@ const Home = () => {
 						</h1>
 					</div>
 					<div className='text-white text-xm bg-black/25 mt-5 mb-10 p-5 rounded-lg'>
-						<p className='leading-6 mt-2'>
+						<p className='leading-7 mt-2'>
 							Te espera una increíble hectárea con VISTA PANÓRAMICA A LA SIERRA
 							DE LOS COMECHINGONES. Un amplio parque con una hermosa PISCINA CON
 							YACUZZI de 18 metros x 8 metros rodeada por almendros y molles.
@@ -126,12 +132,12 @@ const Home = () => {
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 								alt='marco'
-								className='absolute'
+								className='absolute transform transition-all duration-300 hover:scale-150'
 							/>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678739213/piscinaYanasuy_nqvh3b.jpg'
 								alt='piscina'
-								className='object-cover cursor-pointer h-[300px] w-[500px]'
+								className='object-cover cursor-pointer hover:scale-150 h-[300px] w-[500px]'
 							/>
 						</div>
 					</div>
@@ -143,7 +149,7 @@ const Home = () => {
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678302756/Marco-PNG_xswnz1.png'
 								alt='marco'
-								className='absolute'
+								className='absolute transform transition-all duration-300 hover:scale-150'
 							/>
 							<img
 								src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678739213/parqueYanasuy_ygucru.jpg'

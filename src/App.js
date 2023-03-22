@@ -21,8 +21,10 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/contacto' element={<Contact />} />
-				<Route path='/reserva' element={<Booking />} />
+				<Route path='/promociones' element={<Booking />} />
 				<Route path='/cabañas' element={<Cabañas />} />
+
+				<Route path='/cabañas/:name' element={<Cabañas />} />
 			</Routes>
 			<Footer />
 		</div>

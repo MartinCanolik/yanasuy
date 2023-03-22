@@ -92,69 +92,71 @@ const Booking = () => {
 				}}
 				validationSchema={validationSchema}>
 				{({ isSubmitting, errors }) => (
-					<Form className='w-full bg-nav h-[585px] justify-center items-center px-4 flex flex-col gap-3 rounded'>
+					<Form className='w-full bg-nav h-[585px] justify-center  items-center px-4 flex flex-col gap-3 rounded'>
 						<h1 className='tracking-wide text-white mb-5 text-2xl font-bold '>
 							Reserva
 						</h1>
 						<hr className='border-2 border-white opacity-50 w-full mb-3' />
 						<div className='flex w-full '>
-							<div className='w-1/2 flex '>
-								<div className='cursor-pointer px-3'>
-									<label
-										htmlFor='adults'
-										className=' tracking-wide text-white text-xm font-bold '>
-										Adultos
-									</label>
-									<Field
-										className='appearance-none w-full text-sm mt-2 bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
-										component='select'
-										id='adults'
-										name='adults'>
-										<option className='text-slate-700' value='0'>
-											0
-										</option>
-										<option className='text-slate-700' value='1'>
-											1
-										</option>
-										<option className='text-slate-700' value='2'>
-											2
-										</option>
-										<option className='text-slate-700' value='3'>
-											3
-										</option>
-										<option className='text-slate-700' value='4'>
-											4
-										</option>
-										<option className='text-slate-700' value='5'>
-											5
-										</option>
-									</Field>
-								</div>
-								<div className=' cursor-pointer'>
-									<label
-										htmlFor='children'
-										className=' tracking-wide text-white text-s font-bold mb-2'>
-										Niños
-									</label>
-									<Field
-										className='appearance-none w-full text-sm mt-2 py-2 px-3 bg-gray-200 text-gray-700 border border-gray-200 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
-										component='select'
-										id='children'
-										name='children'>
-										<option value='0'>0</option>
-										<option value='1'>1</option>
-										<option value='2'>2</option>
-										<option value='3'>3</option>
-										<option value='4'>4</option>
-										<option value='5'>5</option>
-									</Field>
-								</div>
+							<div className='w-1/4 cursor-pointer px-3'>
+								<label
+									htmlFor='adults'
+									className=' tracking-wide text-white text-xm font-bold '>
+									Adultos
+								</label>
+								<Field
+									className='cursor-pointer appearance-none text-sm mt-2 py-2 px-3 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+									component='select'
+									id='adults'
+									name='adults'>
+									<option className='text-slate-700' value='0'>
+										0
+									</option>
+									<option className='text-slate-700' value='1'>
+										1
+									</option>
+									<option className='text-slate-700' value='2'>
+										2
+									</option>
+									<option className='text-slate-700' value='3'>
+										3
+									</option>
+									<option className='text-slate-700' value='4'>
+										4
+									</option>
+									<option className='text-slate-700' value='5'>
+										5
+									</option>
+								</Field>
 							</div>
 
-							<div className='w-1/2 flex flex-col px-3'>
+							<div className='w-1/4 cursor-pointer px-3'>
+								<label
+									htmlFor='children'
+									className=' tracking-wide text-white text-s font-bold mb-2'>
+									Niños
+								</label>
+								<Field
+									className='cursor-pointer appearance-none text-sm mt-2 py-2 px-3 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+									component='select'
+									id='children'
+									name='children'>
+									<option value='0'>0</option>
+									<option value='1'>1</option>
+									<option value='2'>2</option>
+									<option value='3'>3</option>
+									<option value='4'>4</option>
+									<option value='5'>5</option>
+								</Field>
+							</div>
+							<div className='w-1/2 cursor-pointer px-3 '>
 								<label htmlFor='' className=' text-white text-sm font-bold'>
 									Check in - Check out
 								</label>
+								{/* <input
+									type='text'
+									className='appearance-none text-sm mt-2 py-2 px-3 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+								/> */}
 								<DateRangeComp setStay={setStay} />
 							</div>
 						</div>
@@ -276,7 +278,7 @@ const Booking = () => {
 							<button
 								type='submit'
 								// disabled={isSubmitting}
-								className='bg-brown hover:bg-nav text-white font-bold w-[20%] py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800  disabled:opacity-5'>
+								className='bg-brown hover:bg-nav text-white font-bold  py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800  disabled:opacity-5'>
 								Enviar
 							</button>
 						</div>

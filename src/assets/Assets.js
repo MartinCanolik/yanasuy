@@ -8,15 +8,13 @@ export const arboles =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678733402/151-1514311_arboles-png-imagenes-de-arboles-png_h3swnv.jpg";
 
 export const surImg = [
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889376/surBanio_dgmbhu.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889375/surExterior_galic6.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678662425/cabania_sur_m8pjh0.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889377/surCocina_ewee6a.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889377/surCama_tidrjg.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889377/surAbitacionNinios_li6hzv.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889376/surCocina2_rug1hp.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889376/surBanio_dgmbhu.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889375/surExterior_galic6.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678662425/cabania_sur_m8pjh0.jpg",
 ];
 
 export const norteImg = [
