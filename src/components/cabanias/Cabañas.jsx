@@ -26,6 +26,7 @@ const Cabañas = () => {
 	useEffect(() => {
 		scrollTO();
 	}, []);
+	const geoCode = [-32.372747, -64.993022];
 
 	return (
 		<div>

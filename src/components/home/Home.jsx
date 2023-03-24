@@ -37,7 +37,7 @@ const Home = () => {
 					<img src={arboles} alt='object-cover' />
 				</div>
 			</div>
-			<div className='flex justify-center items-center rounded-xl p-5 m-auto text-white text-2xl font-body mt-[20vh] bg-brown h-[45%] w-full '>
+			<div className='flex justify-center items-center p-5 m-auto text-white text-2xl font-body mt-[20vh] bg-brown h-[45%] w-full '>
 				<h1>Nuestras Cabañas</h1>
 			</div>
 			<div className='flex flex-col justify-center bg-nav px-5 mt-[15vh] m-auto rounded-lg h-[400px] w-[800px] '>

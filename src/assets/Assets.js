@@ -12,6 +12,7 @@ export const surImg = [
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678662425/cabania_sur_m8pjh0.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889377/surCocina_ewee6a.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889377/surCama_tidrjg.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889377/surCama2_jtusy8.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889377/surAbitacionNinios_li6hzv.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889376/surCocina2_rug1hp.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889376/surBanio_dgmbhu.jpg",

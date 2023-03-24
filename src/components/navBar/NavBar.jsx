@@ -33,7 +33,8 @@ const NavBar = () => {
 				</li>
 				<li
 					className='flex gap-20 text-white text-lg
-				 font-body tracking-wide cursor-pointer'>
+				 font-body tracking-wide cursor-pointer'
+					onClick={() => navigate("/contacto")}>
 					<a className='list-link'>CONTACTO</a>
 				</li>
 			</ul>

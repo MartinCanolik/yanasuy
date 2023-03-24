@@ -11,6 +11,9 @@ module.exports = {
 				white: "#f0fdfa",
 				customRed: "#CE2A3A",
 				brown: "#AD8E70",
+				headerBlack: "#334155",
+				textBlack: "#64748b",
+				hr: "#cbd5e1",
 			},
 			fontFamily: {
 				body: ["Merriweather"],
