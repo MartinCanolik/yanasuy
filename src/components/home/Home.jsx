@@ -26,11 +26,11 @@ const Home = () => {
 							MICLOCLIMA DE MUNDO y PRIMEROS EN CÁLIDAD AMBIENTAL. <br /> <br />
 							Emprendimiento familiar dedicados al servicio turístico, brindando
 							una cálida y personalizada atención. <br /> <br />
-							<div className='text-center'>
-								“YANASUY” significa MI GRAN AMIGO <br /> DONDE LLEGA UN TURISTA
-								Y SE VA UN AMIGO
-							</div>
 						</p>
+						<div className='text-center'>
+							“YANASUY” significa MI GRAN AMIGO <br /> DONDE LLEGA UN TURISTA Y
+							SE VA UN AMIGO
+						</div>
 					</div>
 				</div>
 				<div className=' w-1/4 '>

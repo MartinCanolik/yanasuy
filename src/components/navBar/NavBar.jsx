@@ -1,7 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Logo from "../../assets/A color letras blancas.png";
+import { Logo } from "../../assets/Assets";
 import { useNavigate, useLocation } from "react-router-dom";
+import Accordion from "react-bootstrap/Accordion";
 import Swal from "sweetalert2";
 
 const NavBar = () => {

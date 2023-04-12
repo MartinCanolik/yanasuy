@@ -2,7 +2,9 @@ import "./App.css";
 import React from "react";
 import Home from "./components/home/Home.jsx";
 import { Route, Routes } from "react-router-dom";
-import NavBar from "./components/navBar/NavBar";
+// import NavBar from "./components/navBar/NavBar";
+import NavBarMobile from "./components/navBar/NavBarMobile";
+
 import CarouselCustom from "./components/carousel/Carousel_custom";
 import Contact from "./components/contact/Contact";
 import Booking from "./components/booking/Booking";
@@ -13,7 +15,8 @@ import Cabañas from "./components/cabanias/Cabañas";
 function App() {
 	return (
 		<div className='relative'>
-			<NavBar />
+			{/* <NavBar /> */}
+			<NavBarMobile />
 			<Watsapp />
 			<div className='!absolute top-[40vh] inset-x-[10%]'>
 				<CarouselCustom />

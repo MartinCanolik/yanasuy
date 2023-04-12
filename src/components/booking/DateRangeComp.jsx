@@ -8,7 +8,7 @@ import "./DateRange.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 
-const DateRangeComp = ({ setStay }) => {
+const DateRangeComp = (setStay) => {
 	// date state
 
 	const [range, setRange] = useState([

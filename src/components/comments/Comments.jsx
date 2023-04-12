@@ -29,10 +29,10 @@ const Comments = () => {
 							</div>
 							<div className='h-[43%] py-3 px-5 overflow-auto'>
 								<p className='text-xm text-white my-3 text-center '>
-									" Un lugar soñado! La atención de Marcela y su familia es
+									Un lugar soñado! La atención de Marcela y su familia es
 									espectacular! Muy cordiales y bien predispuestos! Las cabañas
 									son hermosas y súper cómodas, la pileta y el jacuzzi
-									espectaculares!! Para volver a visitar sin dudarlo!!. "
+									espectaculares!! Para volver a visitar sin dudarlo!!.
 								</p>
 							</div>
 							<div className='flex items-center h-[23%] w-[45%] p-3'>
@@ -46,10 +46,10 @@ const Comments = () => {
 							</div>
 							<div className='h-[43%]  py-3 px-5 overflow-auto'>
 								<p className='text-xm text-white my-3 text-center'>
-									" Hermoso lugar! Súper recomendable! Las cabañas completas y
-									muy cómodas. La atención de Marcela y Laurita: un lujo! Nos
+									Hermoso lugar! Súper recomendable! Las cabañas completas y muy
+									cómodas. La atención de Marcela y Laurita: un lujo! Nos
 									atendieron con mucha amabilidad y cariño, incluso a Lupita (
-									nuestra mascota). "
+									nuestra mascota).
 								</p>
 							</div>
 							<div className='flex items-center h-[23%] w-[45%] p-3'>
@@ -63,9 +63,9 @@ const Comments = () => {
 							</div>
 							<div className='h-[43%] p-3 overflow-auto'>
 								<p className='text-xm py-3 text-white text-center'>
-									" Un lugar encantador, la vista es hermosa, las cabañas un
+									Un lugar encantador, la vista es hermosa, las cabañas un
 									espectáculo, y los dueños excelentes y muy atentos. Totalmente
-									recomendable. "
+									recomendable.
 								</p>
 							</div>
 							<div className='flex items-center h-[23%] w-[45%] p-3'>
@@ -85,9 +85,9 @@ const Comments = () => {
 							</div>
 							<div className='h-[43%] py-3 px-5 overflow-auto '>
 								<p className='text-xm text-white my-3 text-center'>
-									" Una paz increible y una belleza unica. Si tengo que
-									comparalo con "algo", seria con la receta de la abuela que mas
-									me gusta. Volveria siempre. "
+									Una paz increible y una belleza unica. Si tengo que comparalo
+									con algo, seria con la receta de la abuela que mas me gusta.
+									Volveria siempre.
 								</p>
 							</div>
 							<div className='h-[23%]  p-3'>
@@ -105,10 +105,10 @@ const Comments = () => {
 							</div>
 							<div className='h-[43%]  py-3 px-5 overflow-auto'>
 								<p className='text-xm text-white my-3 text-center'>
-									" Impecable y muy cálida la atención de Marcela. Hermosa la
+									Impecable y muy cálida la atención de Marcela. Hermosa la
 									propiedad y las vistas de las sierras y del valle. Los chicos
 									disfrutaron muchísimo de la pileta y de la mesa de ping-pong.
-									Muy tranquilo. "
+									Muy tranquilo.
 								</p>
 							</div>
 							<div className='h-[23%] p-3'>
@@ -126,7 +126,7 @@ const Comments = () => {
 							</div>
 							<div className='h-[43%] p-3 overflow-auto'>
 								<p className='text-xm py-3 px-5 text-white mt-10 text-center'>
-									" Excelente lugar !!!!! "
+									Excelente lugar !!!!!
 								</p>
 							</div>
 							<div className='h-[23%]  p-3'>

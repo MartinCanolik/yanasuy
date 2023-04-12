@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import { BsInstagram, BsFacebook, BsYoutube } from "react-icons/bs";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";

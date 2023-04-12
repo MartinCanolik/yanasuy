@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { iconPerson } from "../../assets/icon";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
@@ -11,6 +11,9 @@ import "./mapStyle.css";
 
 const Contact = () => {
 	const geoCode = [-32.372747, -64.993022];
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>
