@@ -9,7 +9,7 @@ export const estrellas =
 export const arboles =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678733402/151-1514311_arboles-png-imagenes-de-arboles-png_h3swnv.jpg";
 export const Logo =
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1681247827/A_color_letras_blancas_qplrqe.svg";
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1681249084/A_color_letras_blancas_dlzn22.png";
 export const LogoMobile =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1681248175/A_color_horizontal_letras_blancas_phbgwe.png";
 //carousel

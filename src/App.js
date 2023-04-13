@@ -1,8 +1,8 @@
 import "./App.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Home from "./components/home/Home.jsx";
 import { Route, Routes } from "react-router-dom";
-// import NavBar from "./components/navBar/NavBar";
+import NavBar from "./components/navBar/NavBar";
 import NavBarMobile from "./components/navBar/NavBarMobile";
 
 import CarouselCustom from "./components/carousel/Carousel_custom";
@@ -13,16 +13,28 @@ import Watsapp from "./components/logoWpp/Watsapp";
 import Cabañas from "./components/cabanias/Cabañas";
 
 function App() {
+	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+	useEffect(() => {
+		function handleResize() {
+			setIsMobile(window.innerWidth <= 768);
+		}
+
+		window.addEventListener("resize", handleResize);
+
+		// limpia el event listener cuando se desmonta el componente
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
 	return (
-		<div className='relative'>
-			{/* <NavBar /> */}
-			<NavBarMobile />
+		<div className='relative '>
+			{isMobile ? <NavBarMobile /> : <NavBar />}
 			<Watsapp />
-			<div className='!absolute top-[40vh] inset-x-[10%]'>
+			<div className='!absolute top-[25] lg:top-[40vh] lg:inset-x-[10%]'>
 				<CarouselCustom />
 			</div>
 			<Routes>
-				<Route path='/' element={<Home />} />
+				<Route path='/' element={<Home {...isMobile} />} />
 				<Route path='/contacto' element={<Contact />} />
 				<Route path='/promociones' element={<Booking />} />
 				<Route path='/cabañas' element={<Cabañas />} />

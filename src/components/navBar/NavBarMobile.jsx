@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { LogoMobile } from "../../assets/Assets";
 import { useNavigate, useLocation } from "react-router-dom";
-import Accordion from "react-bootstrap/Accordion";
 import Swal from "sweetalert2";
 
 const NavBarMobile = () => {
@@ -17,7 +16,7 @@ const NavBarMobile = () => {
 		<nav
 			className={
 				location.pathname === "/"
-					? "  bg-nav h-[40vh] w-full pt-10 gap-3 px-3 "
+					? "  bg-nav h-[25vh] w-full pt-10 gap-3 px-3 "
 					: "bg-nav pt-10 w-full gap-3 px-3"
 			}>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -25,31 +24,8 @@ const NavBarMobile = () => {
 					<div className='cursor-pointer' onClick={() => navigate("/")}>
 						<img className='w-[60vw]' src={LogoMobile} alt='logo cabanias' />
 					</div>
-					<div className='hidden md:block'>
-						<div className='flex items-center ml-10'>
-							<a
-								href='#'
-								className='text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
-								Item 1
-							</a>
-							<a
-								href='#'
-								className='text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
-								Item 2
-							</a>
-							<a
-								href='#'
-								className='text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
-								Item 3
-							</a>
-							<a
-								href='#'
-								className='text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
-								Item 4
-							</a>
-						</div>
-					</div>
-					<div className=' flex md:hidden'>
+
+					<div className=' flex '>
 						<button
 							onClick={() => setIsOpen(!isOpen)}
 							type='button'
