@@ -66,29 +66,35 @@ const NavBarMobile = () => {
 				</div>
 			</div>
 			<div
-				className={`${isOpen ? "block" : "hidden"} md:hidden`}
+				className={` ${
+					isOpen
+						? " right-[-100vw] transition duration-700 ease-in-out right-0 "
+						: " hidden"
+				} md:hidden`}
 				id='mobile-menu'>
-				<ul className='flex flex-col justify-start gap-3 items-center py-10'>
-					<li className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'>
-						<a className='list-link'>MERLO </a>
-					</li>
-					<li
-						className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'
-						onClick={() => navigate("/cabañas")}>
-						<a className='list-link'>CABAÑAS</a>
-					</li>
+				<div className='bg-nav absolute left-0 z-50 top-[24vh] h-[100vh] w-[100vw]   '>
+					<ul className='flex flex-col justify-start gap-3 items-center py-10'>
+						<li className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'>
+							<a className='list-link'>MERLO </a>
+						</li>
+						<li
+							className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'
+							onClick={() => navigate("/cabañas")}>
+							<a className='list-link'>CABAÑAS</a>
+						</li>
 
-					<li
-						onClick={() => alertPromotions()}
-						className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'>
-						<a className='list-link'>PROMOCIONES</a>
-					</li>
-					<li
-						className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'
-						onClick={() => navigate("/contacto")}>
-						<a className='list-link'>CONTACTO</a>
-					</li>
-				</ul>
+						<li
+							onClick={() => alertPromotions()}
+							className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'>
+							<a className='list-link'>PROMOCIONES</a>
+						</li>
+						<li
+							className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'
+							onClick={() => navigate("/contacto")}>
+							<a className='list-link'>CONTACTO</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	);
