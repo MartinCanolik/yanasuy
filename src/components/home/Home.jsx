@@ -13,7 +13,7 @@ const Home = (isMobile) => {
 	return (
 		<>
 			<div
-				className={`${lgTitle} lg:rounded-xl mt-[50vh]  lg:mt-[40vh] lg:w-[890px]`}>
+				className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[40vh] lg:w-[890px]`}>
 				<h1>Nuestra Historia</h1>
 			</div>
 

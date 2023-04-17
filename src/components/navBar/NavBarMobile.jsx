@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { LogoMobile } from "../../assets/Assets";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const NavBarMobile = () => {
 	const navigate = useNavigate();
-	const location = useLocation();
 	const [isOpen, setIsOpen] = useState(false);
 
 	const alertPromotions = () => {
@@ -13,12 +12,7 @@ const NavBarMobile = () => {
 	};
 
 	return (
-		<nav
-			className={
-				location.pathname === "/"
-					? "  bg-nav h-[25vh] w-full pt-10 gap-3 px-3 "
-					: "bg-nav pt-10 w-full gap-3 px-3"
-			}>
+		<nav className='fixed top-0 w-full z-50 bg-nav h-[20vh] pt-10 '>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='flex items-center justify-between h-16'>
 					<div className='cursor-pointer' onClick={() => navigate("/")}>
@@ -65,36 +59,34 @@ const NavBarMobile = () => {
 					</div>
 				</div>
 			</div>
+
 			<div
 				className={` ${
 					isOpen
-						? " right-[-100vw] transition duration-700 ease-in-out right-0 "
-						: " hidden"
-				} md:hidden`}
-				id='mobile-menu'>
-				<div className='bg-nav absolute left-0 z-50 top-[24vh] h-[100vh] w-[100vw]   '>
-					<ul className='flex flex-col justify-start gap-3 items-center py-10'>
-						<li className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'>
-							<a className='list-link'>MERLO </a>
-						</li>
-						<li
-							className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'
-							onClick={() => navigate("/cabañas")}>
-							<a className='list-link'>CABAÑAS</a>
-						</li>
+						? "  transition-transform duration-300 transform translate-x-0 absolute bg-nav z-50 top-[19vh] h-[100vh] w-[100vw]"
+						: " transition-transform duration-300 transform translate-x-full absolute bg-nav z-50 top-[19vh] h-[100vh] w-[100vw]"
+				} md:hidden`}>
+				<ul className='flex flex-col justify-start gap-3 items-center py-10'>
+					<li className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'>
+						<a className='list-link'>MERLO </a>
+					</li>
+					<li
+						className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'
+						onClick={() => navigate("/cabañas")}>
+						<a className='list-link'>CABAÑAS</a>
+					</li>
 
-						<li
-							onClick={() => alertPromotions()}
-							className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'>
-							<a className='list-link'>PROMOCIONES</a>
-						</li>
-						<li
-							className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'
-							onClick={() => navigate("/contacto")}>
-							<a className='list-link'>CONTACTO</a>
-						</li>
-					</ul>
-				</div>
+					<li
+						onClick={() => alertPromotions()}
+						className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'>
+						<a className='list-link'>PROMOCIONES</a>
+					</li>
+					<li
+						className='flex gap-20 text-white text-sm font-body tracking-wide cursor-pointer'
+						onClick={() => navigate("/contacto")}>
+						<a className='list-link'>CONTACTO</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	);

@@ -6,7 +6,7 @@ const logoFooter =
 
 const Footer = () => {
 	return (
-		<footer className='flex items-center justify-between px-10 bg-nav h-[40vh]'>
+		<footer className='flex flex-wrap items-center justify-between px-10 bg-nav h-[40vh]'>
 			<div className='w-[20%]'>
 				<img src={logoFooter} alt='logo footer' />
 			</div>

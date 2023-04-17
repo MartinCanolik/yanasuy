@@ -22,6 +22,7 @@ const NavBar = () => {
 					onClick={() => navigate("/cabañas")}>
 					<a className='list-link'>CABAÑAS</a>
 				</li>
+
 				<div className='cursor-pointer' onClick={() => navigate("/")}>
 					<img className='max-h-[25vh]' src={`${Logo}`} alt='logo cabanias' />
 				</div>

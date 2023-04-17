@@ -27,10 +27,10 @@ function App() {
 	}, []);
 
 	return (
-		<div className='relative '>
+		<div className=''>
 			{isMobile ? <NavBarMobile /> : <NavBar />}
 			<Watsapp />
-			<div className='!absolute top-[25] lg:top-[40vh] lg:inset-x-[10%]'>
+			<div className='!absolute top-[20vh] lg:top-[40vh] lg:inset-x-[10%]'>
 				<CarouselCustom />
 			</div>
 			<Routes>
