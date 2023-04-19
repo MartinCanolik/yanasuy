@@ -1,7 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Logo from "../../assets/A color letras blancas.png";
+import { Logo } from "../../assets/Assets";
 import { useNavigate, useLocation } from "react-router-dom";
+import Accordion from "react-bootstrap/Accordion";
 import Swal from "sweetalert2";
 
 const NavBar = () => {
@@ -22,6 +22,7 @@ const NavBar = () => {
 					onClick={() => navigate("/cabañas")}>
 					<a className='list-link'>CABAÑAS</a>
 				</li>
+
 				<div className='cursor-pointer' onClick={() => navigate("/")}>
 					<img className='max-h-[25vh]' src={`${Logo}`} alt='logo cabanias' />
 				</div>

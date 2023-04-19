@@ -1,11 +1,18 @@
+//logos
+
 export const logoBooking =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678401479/bookingcom-1_br2vnl.svg";
 export const logoGoogle =
-	"https://documents.reverso.net/img/new_design/icons/ic-google.svg";
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1681939745/ic-google_oky7ev.svg";
 export const estrellas =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678539690/five-stars_tulo1k.png";
 export const arboles =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678733402/151-1514311_arboles-png-imagenes-de-arboles-png_h3swnv.jpg";
+export const Logo =
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1681249084/A_color_letras_blancas_dlzn22.png";
+export const LogoMobile =
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1681248175/A_color_horizontal_letras_blancas_phbgwe.png";
+//carousel
 
 export const surImg = [
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889375/surExterior_galic6.jpg",
@@ -28,4 +35,13 @@ export const norteImg = [
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889375/norteLiving_flomwy.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889375/noteCocina2_kat4ih.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678889375/norteBanio_jljwbq.jpg",
+];
+
+export const piscinaImg = [
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1679951895/piscina_ai0zjp.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1679951895/piscina4_ae6w1a.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1679951887/piscina5_xonzyo.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1679951895/piscina3_btpcsp.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1679951895/piscina2_kujjlk.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1679951895/piscina4_ae6w1a.jpg",
 ];
