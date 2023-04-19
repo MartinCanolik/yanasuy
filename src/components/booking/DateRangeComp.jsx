@@ -7,8 +7,8 @@ import es from "date-fns/locale/es";
 import "./DateRange.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
-
-const DateRangeComp = (setStay) => {
+// eslint-disable-next-line react/prop-types
+const DateRangeComp = ({ setStay }) => {
 	// date state
 
 	const [range, setRange] = useState([

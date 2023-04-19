@@ -71,19 +71,28 @@ const NavBarMobile = () => {
 					<hr className='border-1 border-white opacity-50 w-1/3' />
 					<li
 						className='flex text-white text-sm font-body tracking-wide cursor-pointer'
-						onClick={() => navigate("/cabañas")}>
+						onClick={() => {
+							navigate("/cabañas");
+							setIsOpen(false);
+						}}>
 						<a className='list-link'>CABAÑAS</a>
 					</li>
 					<hr className='border-1 border-white opacity-50 w-1/3' />
 					<li
-						onClick={() => alertPromotions()}
+						onClick={() => {
+							alertPromotions();
+							setIsOpen(false);
+						}}
 						className='flex text-white text-sm font-body tracking-wide cursor-pointer'>
 						<a className='list-link'>PROMOCIONES</a>
 					</li>
 					<hr className='border-1 border-white opacity-50 w-1/3' />
 					<li
 						className='flex text-white text-sm font-body tracking-wide cursor-pointer'
-						onClick={() => navigate("/contacto")}>
+						onClick={() => {
+							navigate("/contacto");
+							setIsOpen(false);
+						}}>
 						<a className='list-link'>CONTACTO</a>
 					</li>
 				</ul>

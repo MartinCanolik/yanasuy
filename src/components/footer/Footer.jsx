@@ -6,8 +6,8 @@ const logoFooter =
 
 const Footer = () => {
 	return (
-		<footer className='flex flex-wrap items-center justify-between px-10 bg-nav h-[40vh]'>
-			<div className='w-[20%]'>
+		<footer className='flex lg:flex-row flex-col items-center justify-evenly lg:justify-between px-10 bg-nav lg:h-[40vh] h-[81vh]'>
+			<div className='lg:block hidden w-[20%]'>
 				<img src={logoFooter} alt='logo footer' />
 			</div>
 			<div className='flex flex-col items-center jusify-center gap-5'>
@@ -18,7 +18,7 @@ const Footer = () => {
 					<a
 						target={"_blank"}
 						href='https://www.instagram.com/cabanasyanasuy/'
-						className='flex flex-col items-center text-white hover:text-slate-300'
+						className='flex flex-col items-center justify-center text-white hover:text-slate-300'
 						rel='noreferrer'>
 						<BsInstagram size={"2em"} />
 						<p>Instagram</p>
@@ -26,7 +26,7 @@ const Footer = () => {
 					<a
 						target={"_blank"}
 						href='https://www.facebook.com/search/top/?q=merlo%20san%20luis%20yanasuy%20caba%C3%B1as'
-						className='flex flex-col items-center text-white hover:text-slate-300'
+						className='flex flex-col items-center justify-center text-white hover:text-slate-300'
 						rel='noreferrer'>
 						<BsFacebook size={"2em"} />
 						<p>Facebook</p>
@@ -34,7 +34,7 @@ const Footer = () => {
 
 					<a
 						href=''
-						className='flex flex-col items-center text-white hover:text-slate-300'>
+						className='flex flex-col items-center justify-center text-white hover:text-slate-300'>
 						<BsYoutube size={"2em"} />
 						<p>Youtube</p>
 					</a>
