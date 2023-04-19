@@ -6,7 +6,10 @@ import { useNavigate } from "react-router-dom";
 
 import { arboles } from "../../assets/Assets";
 
-const Home = (isMobile) => {
+// desde rules del eslint me lo desabilita en el vs pero no en el nav
+
+// eslint-disable-next-line react/prop-types
+const Home = ({ isMobile }) => {
 	const navigate = useNavigate();
 	const lgTitle =
 		"flex justify-center items-center p-5 m-auto text-white lg:text-2xl font-body bg-brown lg:h-[45%] w-full";
@@ -166,7 +169,7 @@ const Home = (isMobile) => {
 						</div>
 					</div>
 				</div>
-				<Comments />
+				<Comments isMobile={isMobile} />
 			</div>
 		</>
 	);

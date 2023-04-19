@@ -1,12 +1,7 @@
-const logoBooking =
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678401479/bookingcom-1_br2vnl.svg";
-const logoGoogle =
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1678472737/google-maps-2020_kcnwqz.jpg";
-
 export const Reviews = [
 	{
 		name: "Romina",
-		logo: logoBooking,
+		logo: "logoBooking",
 		rating: "10",
 		stars: null,
 		review:
@@ -14,7 +9,7 @@ export const Reviews = [
 	},
 	{
 		name: "Maria",
-		logo: logoBooking,
+		logo: "logoBooking",
 		rating: "9",
 		stars: null,
 		review:
@@ -22,101 +17,32 @@ export const Reviews = [
 	},
 	{
 		name: "Ricardo",
-		logo: logoBooking,
+		logo: "logoBooking",
 		rating: "9",
 		stars: null,
 		review: "Excelente lugar !!!!!",
 	},
 	{
 		name: "andreagabriela1978 castex",
-		logo: logoGoogle,
+		logo: "logoGoogle",
 		rating: null,
-		stars: (
-			<div className='flex'>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-			</div>
-		),
+
 		review:
 			"Un lugar soñado! La atención de Marcela y su familia es espectacular! Muy cordiales y bien predispuestos! Las cabañas son hermosas y súper cómodas, la pileta y el jacuzzi espectaculares!! Para volver a visitar sin dudarlo!!",
 	},
 	{
 		name: "Lía Bedatou",
-		logo: logoGoogle,
+		logo: "logoGoogle",
 		rating: null,
-		stars: (
-			<div className='flex'>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-			</div>
-		),
+
 		review:
 			"Hermoso lugar! Súper recomendable! Las cabañas completas y muy cómodas. La atención de Marcela y Laurita: un lujo! Nos atendieron con mucha amabilidad y cariño, incluso a Lupita ( nuestra mascota). Un lugar para disfrutar a full la belleza y la naturaleza de Merlo. Volveremos seguramente!",
 	},
 	{
 		name: "Nicolas Alejandro Fringes",
-		logo: logoGoogle,
+		logo: "logoGoogle",
 		rating: null,
-		stars: (
-			<div className='flex'>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-				<img
-					src='https://res.cloudinary.com/drhj3sc2o/image/upload/v1678474301/descarga_1_jwuvof.jpg'
-					alt='star'
-				/>
-			</div>
-		),
+
 		review:
 			"Un lugar encantador, la vista es hermosa, las cabañas un espectáculo, y los dueños excelentes y muy atentos. Totalmente recomendable.",
 	},

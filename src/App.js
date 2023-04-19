@@ -16,6 +16,7 @@ function App() {
 	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
 	useEffect(() => {
+		console.log(isMobile);
 		function handleResize() {
 			setIsMobile(window.innerWidth <= 768);
 		}
@@ -34,7 +35,7 @@ function App() {
 				<CarouselCustom />
 			</div>
 			<Routes>
-				<Route path='/' element={<Home {...isMobile} />} />
+				<Route path='/' element={<Home isMobile={isMobile} />} />
 				<Route path='/contacto' element={<Contact />} />
 				<Route path='/promociones' element={<Booking />} />
 				<Route path='/cabañas' element={<Cabañas />} />
