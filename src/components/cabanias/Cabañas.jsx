@@ -43,15 +43,17 @@ const Cabañas = () => {
 					bg-fixed 
 					bg-cover
 					w-full
+					mt-[20vh]
+					lg:mt-0
 					h-[25vh]
 				
 					`}>
-				<div className='flex flex-col justify-center items-center rounded-xl p-5 m-auto text-white text-3xl font-body bg-black/50 w-[50vw] '>
+				<div className='flex justify-center items-center rounded-xl p-5 m-auto text-white text-xl lg:text-3xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
 					<h1>Cabaña Sur</h1>
 				</div>
 			</div>
-			<div className='flex justify-center px-[8vw] gap-10  mt-20'>
-				<div className='flex flex-col w-[75%] justify-center'>
+			<div className='flex flex-col lg:flex-row justify-center lg:px-[8vw] gap-10  lg:mt-20'>
+				<div className='flex flex-col w-full lg:w-[75%] justify-center'>
 					<Carousel
 						autoPlay={true}
 						showThumbs={false}
@@ -67,23 +69,23 @@ const Cabañas = () => {
 								);
 							})}
 					</Carousel>
-					<div className='mb-20'>
+					<div className='mb-20 flex flex-col justify-center px-5'>
 						<div>
 							<h1 className='font-bold text-2xl text-slate-700 mt-20'>
 								Cabaña Sur
 							</h1>
 						</div>
 						<hr className='border-2 border-slate-300 mt-2' />
-						<p className='my-5 text-slate-500 leading-7 pt-5 font-medium'>
-							“BALCÓN A LA SIERRA DE LOS COMENCHINGONES” espectacular vista
-							panorámica a la sierra y al valle.
+						<p className='my-5 text-slate-500 lg:leading-7 pt-5 text-l font-medium'>
+							“BALCÓN A LA SIERRA DE LOS COMENCHINGONES” <br /> espectacular
+							vista panorámica a la sierra y al valle.
 						</p>
-						<div className='flex gap-20'>
-							<div>
-								<h2 className='text-slate-700 text-xl leading-7 pt-5 font-bold'>
+						<div className='flex justify-center px-3 gap-10 lg:gap-20'>
+							<div className='w-1/2'>
+								<h2 className='flex w-full text-slate-700 text-xl lg:leading-7 pt-5 font-bold'>
 									Planta Alta
 								</h2>
-								<ul className='text-slate-500 leading-7 pt-5 font-medium list-disc'>
+								<ul className='text-slate-500 lg:text-base  text-sm lg:leading-7 pt-5 font-medium list-disc'>
 									<li>Microondas.</li>
 									<li>Heladera con Frezzer.</li>
 									<li>Pava eléctrica.</li>
@@ -98,11 +100,11 @@ const Cabañas = () => {
 									<li> Sector de living con sillones para un buen descanso.</li>
 								</ul>
 							</div>
-							<div>
+							<div className='w-1/2'>
 								<h2 className='text-slate-700 text-xl leading-7 pt-5 font-bold'>
 									Planta Baja
 								</h2>
-								<ul className='text-slate-500 leading-7 pt-5 font-medium list-disc'>
+								<ul className='text-slate-500 lg:leading-7 lg:text-base text-sm pt-5 font-medium list-disc'>
 									<li>
 										Dos habitaciones confortables amplias y luminosas con vista
 										a la sierra.
@@ -121,17 +123,17 @@ const Cabañas = () => {
 						</div>
 					</div>
 				</div>
-				<div className='w-1/2 '>
+				<div className='lg:w-1/2 w-full'>
 					<Booking />
 				</div>
 			</div>
 			<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
-				<div className='flex flex-col justify-center items-center rounded-xl p-5 m-auto text-white text-3xl font-body bg-black/50 w-[50vw] '>
+				<div className='flex justify-center items-center rounded-xl p-5 m-auto text-white text-xl lg:text-3xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
 					<h1>Cabaña Norte</h1>
 				</div>
 			</div>
-			<div className='flex justify-center px-[8vw] gap-10  mt-10'>
-				<div className='flex flex-col w-[75%] justify-center'>
+			<div className='flex flex-col lg:flex-row justify-center lg:px-[8vw] gap-10  lg:mt-20'>
+				<div className='flex flex-col w-full lg:w-[75%] justify-center'>
 					<Carousel
 						// autoPlay={true}
 						showThumbs={false}
@@ -147,23 +149,23 @@ const Cabañas = () => {
 								);
 							})}
 					</Carousel>
-					<div className='mb-20'>
+					<div className='mb-20 flex flex-col justify-center px-5'>
 						<div>
 							<h1 className='font-bold text-2xl text-slate-700 mt-20'>
 								Cabaña Norte
 							</h1>
 						</div>
 						<hr className='border-2 border-slate-300 mt-2' />
-						<p className='my-5 text-slate-500 leading-7 pt-5 font-medium'>
+						<p className='my-5 text-slate-500 lg:leading-7 pt-5 text-l font-medium'>
 							“BALCÓN CON VISTA INCREIBLE AL VALLE DEL CONLARA” con una
 							espectacular vista a la sierra y al valle.
 						</p>
-						<div className='flex gap-20'>
-							<div>
-								<h2 className='text-slate-700 text-xl leading-7 pt-5 font-bold'>
+						<div className='flex justify-center px-3 gap-5 lg:gap-20'>
+							<div className='w-1/2'>
+								<h2 className='flex w-full text-slate-700 text-xl lg:leading-7 pt-5 font-bold'>
 									Planta Alta
 								</h2>
-								<ul className='text-slate-500 leading-7 pt-5 font-medium list-disc'>
+								<ul className='text-slate-500 lg:leading-7 lg:text-base text-sm pt-5 font-medium list-disc'>
 									<li>Microondas.</li>
 									<li>Heladera con Frezzer.</li>
 									<li>Pava eléctrica.</li>
@@ -178,11 +180,11 @@ const Cabañas = () => {
 									<li> Sector de living con sillones para un buen descanso.</li>
 								</ul>
 							</div>
-							<div>
-								<h2 className='text-slate-700 text-xl leading-7 pt-5 font-bold'>
+							<div className='w-1/2'>
+								<h2 className='flex w-full text-slate-700 text-xl lg:leading-7 pt-5 font-bold'>
 									Planta Baja
 								</h2>
-								<ul className='text-slate-500 leading-7 pt-5 font-medium list-disc'>
+								<ul className='text-slate-500 lg:leading-7 lg:text-base text-sm pt-5 font-medium list-disc'>
 									<li>
 										Dos habitaciones confortables amplias y luminosas con vista
 										a la sierra.
@@ -201,17 +203,17 @@ const Cabañas = () => {
 						</div>
 					</div>
 				</div>
-				<div className='w-1/2 '>
+				<div className='lg:w-1/2 w-full'>
 					<Booking />
 				</div>
 			</div>
 			<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
-				<div className='flex flex-col justify-center items-center rounded-xl p-5 m-auto text-white text-3xl font-body bg-black/50 w-[50vw] '>
+				<div className='flex justify-center items-center rounded-xl p-5 m-auto text-white text-xl lg:text-3xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
 					<h1>Piscina</h1>
 				</div>
 			</div>
-			<div className='flex justify-center px-[8vw] gap-10  mt-10 mb-10'>
-				<div className='w-[60%] flex flex-col justify-center'>
+			<div className='flex justify-center lg:px-[8vw] gap-10  lg:mt-10 mb-10'>
+				<div className='flex flex-col w-full lg:w-[75%] justify-center'>
 					<Carousel
 						// autoPlay={true}
 						showThumbs={false}
@@ -227,30 +229,36 @@ const Cabañas = () => {
 								);
 							})}
 					</Carousel>
-					<div>
-						<h1 className='font-bold text-2xl text-slate-700 mt-20'>Piscina</h1>
+					<div className='mx-5'>
+						<div>
+							<h1 className='font-bold text-2xl text-slate-700 mt-20'>
+								Piscina
+							</h1>
+						</div>
+						<hr className='border-2 border-slate-300 mt-2' />
+						<ul className='my-5 mx-5 text-slate-500 leading-7 pt-5 font-medium list-disc'>
+							<li>
+								<h2 className='text-slate-700 font-bold'>
+									PISCINA CON YACUZZI{" "}
+								</h2>
+								de 18 metros x 8 metros rodeada por almendros y molles. Con
+								reposeras y lugar de descanso.
+							</li>
+							<li>
+								<h2 className='text-slate-700 font-bold'>Quincho </h2>de 8
+								metros x 5 metros, con mesones y sillones de madera y una mesa
+								de Ping Pong para que puedan divertirse en familia.
+							</li>
+						</ul>
+						<button
+							onClick={() => {
+								navigate("/contacto");
+							}}
+							// disabled={isSubmitting}
+							className=' bg-brown hover:bg-nav text-white font-bold mx-auto mt-2 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
+							Mas informacion
+						</button>
 					</div>
-					<hr className='border-2 border-slate-300 mt-2' />
-					<ul className='my-5 text-slate-500 leading-7 pt-5 font-medium list-disc'>
-						<li>
-							<h2 className='text-slate-700 font-bold'>PISCINA CON YACUZZI </h2>
-							de 18 metros x 8 metros rodeada por almendros y molles. Con
-							reposeras y lugar de descanso.
-						</li>
-						<li>
-							<h2 className='text-slate-700 font-bold'>Quincho </h2>de 8 metros
-							x 5 metros, con mesones y sillones de madera y una mesa de Ping
-							Pong para que puedan divertirse en familia.
-						</li>
-					</ul>
-					<button
-						onClick={() => {
-							navigate("/contacto");
-						}}
-						// disabled={isSubmitting}
-						className=' bg-brown hover:bg-nav text-white font-bold mx-auto mt-2 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
-						Mas informacion
-					</button>
 				</div>
 			</div>
 		</div>

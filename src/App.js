@@ -30,7 +30,9 @@ function App() {
 	return (
 		<div className=''>
 			{isMobile ? <NavBarMobile /> : <NavBar />}
+
 			<Watsapp />
+
 			<div className='!absolute top-[20vh] lg:top-[40vh] lg:inset-x-[10%]'>
 				<CarouselCustom />
 			</div>
