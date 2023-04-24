@@ -43,7 +43,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<div className='flex flex-col lg:row mx-auto my-20 items-center justify-center w-[80vw] gap-20'>
+			<div className='flex lg:flex-row flex-col lg:row mx-auto my-20 items-center justify-center w-[80vw] gap-20'>
 				<ContactForm />
 				<div className='lg:w-1/2 w-full lg:px-20 text-center'>
 					<div>
