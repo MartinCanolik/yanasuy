@@ -64,7 +64,7 @@ const ContactForm = () => {
 		}
 	};
 	return (
-		<div className='w-1/2 flex flex-col'>
+		<div className='lg:w-1/2 w-full flex flex-col'>
 			<Formik
 				initialValues={{
 					firstName: "",

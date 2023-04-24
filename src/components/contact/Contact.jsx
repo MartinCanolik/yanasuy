@@ -18,9 +18,9 @@ const Contact = () => {
 	return (
 		<>
 			<div>
-				<div className='w-[80vw] h-[70vh] m-auto mt-[10vh]'>
+				<div className='lg:w-[80vw] h-[70vh] m-auto mt-[20vh] lg:mt-[10vh]'>
 					<MapContainer
-						style={{ height: "80%", minHeight: "80%" }}
+						style={{ height: "80%", minHeight: "80%", "z-index": 0 }}
 						center={geoCode}
 						zoom={15}
 						scrollWheelZoom={false}>
@@ -32,18 +32,20 @@ const Contact = () => {
 							<Popup>Cabañas Yanasuy</Popup>
 						</Marker>
 					</MapContainer>
-					<hr className='border-2 border-slate-300 mt-5 w-[20%]' />
-					<div className='flex items-center text-teal-700 font-bold gap-2  mt-5'>
-						<FaMapMarkerAlt size={"2em"} />
-						<h1 className='text-textBlack'>
-							Cuesta de las granadillas 1397, Merlo San Luis, Arg.
-						</h1>
+					<div className='px-5'>
+						<hr className='border-2 border-slate-300 mt-5 w-[20%]' />
+						<div className='flex items-center text-teal-700 font-bold gap-2 mt-5'>
+							<FaMapMarkerAlt size={"2em"} />
+							<h1 className='text-textBlack'>
+								Cuesta de las granadillas 1397, Merlo San Luis, Arg.
+							</h1>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div className='flex mx-auto my-20 items-center w-[80vw] gap-20'>
+			<div className='flex flex-col lg:row mx-auto my-20 items-center justify-center w-[80vw] gap-20'>
 				<ContactForm />
-				<div className='w-1/2 px-20'>
+				<div className='lg:w-1/2 w-full lg:px-20 text-center'>
 					<div>
 						<h2 className='font-semibold text-base text-teal-700 mt-5'>
 							TUS CABAÑAS EN MERLO SAN LUIS
@@ -56,11 +58,11 @@ const Contact = () => {
 							Sierras.
 						</p>
 					</div>
-					<div>
+					<div className='flex flex-col items-center'>
 						<h2 className='font-semibold text-base text-teal-700 mt-10'>
 							INFORMACION DE CONTACTO
 						</h2>
-						<ul className='text-slate-500 text-base leading-6 pt-5 font-normal '>
+						<ul className='mx-auto text-slate-500 text-base leading-6 pt-5 font-normal '>
 							<li className='flex gap-3 items-center mb-3'>
 								<FaEnvelope />
 								Email: yanasuy@gmail.com
@@ -71,12 +73,12 @@ const Contact = () => {
 							</li>
 						</ul>
 					</div>
-					<div>
+					<div className='flex flex-col items-center'>
 						<h2 className='font-semibold text-base text-teal-700 mt-10'>
 							SOCIAL MEDIA
 						</h2>
 
-						<div className='flex gap-[20px] mt-5 text-slate-500'>
+						<div className='flex gap-10 lg:gap-[20px] mt-5 text-slate-500'>
 							<a
 								target={"_blank"}
 								href='https://www.instagram.com/cabanasyanasuy/'
