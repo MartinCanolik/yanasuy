@@ -15,39 +15,41 @@ const Home = ({ isMobile }) => {
 		"flex justify-center items-center p-5 m-auto text-white lg:text-2xl font-body bg-brown lg:h-[45%] w-full";
 	return (
 		<>
-			<div
-				className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[40vh] lg:w-[890px]`}>
-				<h1>Nuestra Historia</h1>
-			</div>
-
-			<div className='flex mt-[10vh] items-center'>
-				{!isMobile && (
-					<div className=' w-1/4'>
-						<img src={arboles} alt='' className='object-cover' />
+			{!isMobile && (
+				<div>
+					<div
+						className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[40vh] lg:w-[890px]`}>
+						<h1>Nuestra Historia</h1>
 					</div>
-				)}
-				<div className='flex items-center justify-center bg-nav p-5 m-auto rounded-lg lg:h-[400px] lg:w-[1000px] '>
-					<div className='flex  flex-wrap overflow-auto justify-center items-center text-white lg:text-md  bg-black/25 my-5 mx-5 px-10 py-10 rounded-lg'>
-						<p className='leading-6 lg:leading-6 text-center lg:text-left my-auto'>
-							Tras recorrer nuestro increíble país, nos decidimos por Merlo, un
-							lugar increíble lleno de magia, paraíso natural. Declarado TERCER
-							MICLOCLIMA DE MUNDO y PRIMEROS EN CÁLIDAD AMBIENTAL. <br /> <br />
-							Emprendimiento familiar dedicados al servicio turístico, brindando
-							una cálida y personalizada atención. <br /> <br />
-						</p>
-						<div className='text-center'>
-							“YANASUY” significa MI GRAN AMIGO <br /> DONDE LLEGA UN TURISTA Y
-							SE VA UN AMIGO
+					<div className='flex mt-[10vh] items-center'>
+						<div className=' w-1/4'>
+							<img src={arboles} alt='' className='object-cover' />
+						</div>
+						<div className='flex items-center justify-center bg-nav p-5 m-auto rounded-lg lg:h-[400px] lg:w-[1000px] '>
+							<div className='flex  flex-wrap overflow-auto justify-center items-center text-white lg:text-md  bg-black/25 my-5 mx-5 px-10 py-10 rounded-lg'>
+								<p className='leading-6 lg:leading-6 text-center lg:text-left my-auto'>
+									Tras recorrer nuestro increíble país, nos decidimos por Merlo,
+									un lugar increíble lleno de magia, paraíso natural. Declarado
+									TERCER MICLOCLIMA DE MUNDO y PRIMEROS EN CÁLIDAD AMBIENTAL.{" "}
+									<br /> <br />
+									Emprendimiento familiar dedicados al servicio turístico,
+									brindando una cálida y personalizada atención. <br /> <br />
+								</p>
+								<div className='text-center'>
+									“YANASUY” significa MI GRAN AMIGO <br /> DONDE LLEGA UN
+									TURISTA Y SE VA UN AMIGO
+								</div>
+							</div>
+						</div>
+						<div className=' w-1/4'>
+							<img src={arboles} alt='' className='object-cover' />
 						</div>
 					</div>
 				</div>
-				{!isMobile && (
-					<div className=' w-1/4'>
-						<img src={arboles} alt='' className='object-cover' />
-					</div>
-				)}
-			</div>
-			<div className={`${lgTitle} mt-[10vh]`}>
+			)}
+
+			<div
+				className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[40vh] lg:w-[890px]`}>
 				<h1>Nuestras Cabañas</h1>
 			</div>
 			<div className='flex flex-col justify-center bg-nav p-5 px-10 mt-[10vh] lg:mt-[15vh] m-auto rounded-lg lg:h-[400px] lg:w-[800px] '>
@@ -63,7 +65,7 @@ const Home = ({ isMobile }) => {
 					<p className='leading-7 text-md mt-2'>
 						Pensando en el bienestar y la comodidad de nuestras queridas
 						familias decidimos construir nuestras cabañas en dos plantas con
-						paredes firmes aislantes revestidas con PIEDRA Y TRONCOS respetando
+						paredes firmes aislantes revestidas con piedra y troncos respetando
 						el entorno natural, la calidez y la frescura de la Sierras.
 					</p>
 				</div>
