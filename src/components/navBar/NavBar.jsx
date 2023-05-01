@@ -14,7 +14,9 @@ const NavBar = () => {
 	return (
 		<nav className={location.pathname === "/" ? "bg-nav h-[70vh]" : "bg-nav"}>
 			<ul className='flex justify-evenly items-center py-10'>
-				<li className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'>
+				<li
+					className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'
+					onClick={() => navigate("/merlo")}>
 					<a className='list-link'>MERLO </a>
 				</li>
 				<li

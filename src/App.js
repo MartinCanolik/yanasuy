@@ -11,6 +11,7 @@ import Booking from "./components/booking/Booking";
 import Footer from "./components/footer/Footer";
 import Watsapp from "./components/logoWpp/Watsapp";
 import Cabañas from "./components/cabanias/Cabañas";
+import Merlo from "./components/merlo/merlo.jsx";
 
 function App() {
 	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -41,6 +42,7 @@ function App() {
 				<Route path='/contacto' element={<Contact />} />
 				<Route path='/promociones' element={<Booking />} />
 				<Route path='/cabañas' element={<Cabañas />} />
+				<Route path='/merlo' element={<Merlo />} />
 
 				<Route path='/cabañas/:name' element={<Cabañas />} />
 			</Routes>

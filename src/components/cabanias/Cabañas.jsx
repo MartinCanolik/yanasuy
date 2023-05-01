@@ -48,7 +48,7 @@ const Cabañas = () => {
 					h-[25vh]
 				
 					`}>
-				<div className='flex justify-center items-center rounded-xl p-5 m-auto text-white text-xl lg:text-3xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
+				<div className='flex justify-center items-center rounded-xl p-3 m-auto text-white text-xl lg:text-2xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
 					<h1>Cabaña Sur</h1>
 				</div>
 			</div>
@@ -128,7 +128,7 @@ const Cabañas = () => {
 				</div>
 			</div>
 			<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
-				<div className='flex justify-center items-center rounded-xl p-5 m-auto text-white text-xl lg:text-3xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
+				<div className='flex justify-center items-center rounded-xl p-3 m-auto text-white text-xl lg:text-2xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
 					<h1>Cabaña Norte</h1>
 				</div>
 			</div>
@@ -143,7 +143,7 @@ const Cabañas = () => {
 						{norteImg &&
 							norteImg.map((el, idx) => {
 								return (
-									<div key={idx}>
+									<div className='' key={idx}>
 										<img className='object-cover' src={el} alt={"el"} />
 									</div>
 								);
@@ -187,7 +187,7 @@ const Cabañas = () => {
 								<ul className='text-slate-500 lg:leading-7 lg:text-base text-sm pt-5 font-medium list-disc'>
 									<li>
 										Dos habitaciones confortables amplias y luminosas con vista
-										a la sierra.
+										al valle.
 									</li>
 									<li>Camas matrimonial queen size con colchón de resorte </li>
 									<li>Camas individuales también con colchón de resorte.</li>
@@ -208,14 +208,14 @@ const Cabañas = () => {
 				</div>
 			</div>
 			<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
-				<div className='flex justify-center items-center rounded-xl p-5 m-auto text-white text-xl lg:text-3xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
+				<div className='flex justify-center items-center rounded-xl p-3 m-auto text-white text-xl lg:text-2xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
 					<h1>Piscina</h1>
 				</div>
 			</div>
 			<div className='flex justify-center lg:px-[8vw] gap-10  lg:mt-10 mb-10'>
-				<div className='flex flex-col w-full lg:w-[75%] justify-center'>
+				<div className='flex flex-col w-full lg:full justify-center'>
 					<Carousel
-						// autoPlay={true}
+						autoPlay={true}
 						showThumbs={false}
 						showIndicators={true}
 						infiniteLoop={true}
@@ -223,8 +223,70 @@ const Cabañas = () => {
 						{piscinaImg &&
 							piscinaImg.map((el, idx) => {
 								return (
-									<div key={idx}>
-										<img className='object-cover' src={el} alt={"el"} />
+									<div className='' key={idx}>
+										<img
+											className='object-cover h-[60vh]'
+											src={el}
+											alt={"el"}
+										/>
+									</div>
+								);
+							})}
+					</Carousel>
+					<div className='mx-5'>
+						<div>
+							<h1 className='font-bold text-2xl text-slate-700 mt-20'>
+								Piscina
+							</h1>
+						</div>
+						<hr className='border-2 border-slate-300 mt-2' />
+						<ul className='my-5 mx-5 text-slate-500 leading-7 pt-5 font-medium list-disc'>
+							<li>
+								<h2 className='text-slate-700 font-bold'>
+									PISCINA CON YACUZZI{" "}
+								</h2>
+								de 18 metros x 8 metros rodeada por almendros y molles. Con
+								reposeras y lugar de descanso.
+							</li>
+							<li>
+								<h2 className='text-slate-700 font-bold'>Quincho </h2>de 8
+								metros x 5 metros, con mesones y sillones de madera y una mesa
+								de Ping Pong para que puedan divertirse en familia.
+							</li>
+						</ul>
+						<button
+							onClick={() => {
+								navigate("/contacto");
+							}}
+							// disabled={isSubmitting}
+							className=' bg-brown hover:bg-nav text-white font-bold mx-auto mt-2 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
+							Mas informacion
+						</button>
+					</div>
+				</div>
+			</div>
+			<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
+				<div className='flex justify-center items-center rounded-xl p-3 m-auto text-white text-xl lg:text-2xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
+					<h1>Parque</h1>
+				</div>
+			</div>
+			<div className='flex justify-center lg:px-[8vw] gap-10  lg:mt-10 mb-10'>
+				<div className='flex flex-col w-full lg:full justify-center'>
+					<Carousel
+						autoPlay={true}
+						showThumbs={false}
+						showIndicators={true}
+						infiniteLoop={true}
+						showStatus={false}>
+						{piscinaImg &&
+							piscinaImg.map((el, idx) => {
+								return (
+									<div className='' key={idx}>
+										<img
+											className='object-cover h-[60vh]'
+											src={el}
+											alt={"el"}
+										/>
 									</div>
 								);
 							})}
