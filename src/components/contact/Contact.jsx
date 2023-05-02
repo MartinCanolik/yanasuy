@@ -50,12 +50,12 @@ const Contact = () => {
 			</div>
 			<div className='flex lg:flex-row flex-col lg:row mx-auto my-20 items-center justify-center w-[80vw] gap-20'>
 				<ContactForm />
-				<div className='lg:w-1/2 w-full lg:px-20 text-center'>
+				<div className='lg:w-1/2 w-full lg:px-20 text-center lg:text-left '>
 					<div>
-						<h2 className='font-semibold text-base text-teal-700 mt-5'>
+						<h2 className='font-semibold text-base text-center text-teal-700 mt-5'>
 							TUS CABAÑAS EN MERLO SAN LUIS
 						</h2>
-						<p className='text-slate-500 text-base leading-6 pt-5 font-normal list-disc'>
+						<p className='text-slate-500 text-base  leading-6 pt-5 font-normal list-disc'>
 							“UBICACIÓN PRIVILEGIADA VISTA PANORÁMICA A LA SIERRA DE LOS
 							COMECHINGONES Y AL VALLE DE CONLARA” Ubicada a 1000 metros sobre
 							el nivel del mar a solo 5 minutos de la Av. del Sol te espera una

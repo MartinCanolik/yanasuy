@@ -45,3 +45,11 @@ export const piscinaImg = [
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1679951895/piscina2_kujjlk.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1679951895/piscina4_ae6w1a.jpg",
 ];
+
+export const adventure = [
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683043695/merlo-activity1-1_toq4zo.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683043695/merlo-activity2_gftuu2.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683043695/merlo-activity3_zdpeo9.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683043695/merlo-activity-4_v4kg2m.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683043694/merlo-activity-5_kvusj7.jpg",
+];

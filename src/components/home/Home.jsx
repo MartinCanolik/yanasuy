@@ -153,7 +153,7 @@ const Home = ({ isMobile }) => {
 							/>
 						</div>
 					</div>
-					<div className='flex flex-col gap-[10vh] mt-[5vh]  lg:gap-10 '>
+					<div className='flex flex-col gap-[10vh]   lg:gap-10 '>
 						<div className='p-5 m-auto text-stone-800 text-center text-xl font-body font-bold bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
 							<h1>Parque</h1>
 						</div>
