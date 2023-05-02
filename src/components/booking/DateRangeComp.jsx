@@ -64,7 +64,7 @@ const DateRangeComp = ({ setStay }) => {
 	console.log(open);
 
 	return (
-		<div className='relative'>
+		<div ref={refOne} className='relative'>
 			<input
 				className=' cursor-pointer appearance-none text-sm mt-2 py-2 px-3 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
 				value={`${format(range[0].startDate, "dd/MM/yyyy")} - ${format(
@@ -74,7 +74,6 @@ const DateRangeComp = ({ setStay }) => {
 				readOnly
 				type='text'
 				onClick={() => setOpen(!open)}
-				ref={refOne}
 			/>
 
 			<div>

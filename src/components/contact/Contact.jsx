@@ -18,6 +18,11 @@ const Contact = () => {
 	return (
 		<>
 			<div>
+				<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
+					<div className='flex justify-center items-center rounded-xl p-3 m-auto text-white text-xl lg:text-2xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
+						<h1>Ubicación y Contacto</h1>
+					</div>
+				</div>
 				<div className='lg:w-[80vw] h-[70vh] m-auto mt-[20vh] lg:mt-[10vh]'>
 					<MapContainer
 						style={{ height: "80%", minHeight: "80%", "z-index": 0 }}
@@ -51,11 +56,16 @@ const Contact = () => {
 							TUS CABAÑAS EN MERLO SAN LUIS
 						</h2>
 						<p className='text-slate-500 text-base leading-6 pt-5 font-normal list-disc'>
-							Pensando en el bienestar y la comodidad de nuestras queridas
-							familias decidimos construir nuestras cabañas en dos plantas con
-							paredes firmes aislantes revestidas con PIEDRA Y TRONCOS
-							respetando el entorno natural, la calidez y la frescura de la
-							Sierras.
+							“UBICACIÓN PRIVILEGIADA VISTA PANORÁMICA A LA SIERRA DE LOS
+							COMECHINGONES Y AL VALLE DE CONLARA” Ubicada a 1000 metros sobre
+							el nivel del mar a solo 5 minutos de la Av. del Sol te espera una
+							hectárea paradisiaca, arbolada respectando la naturaleza autóctona
+							frutales, nogales, almendros, molles, piscos, tabaquillos,
+							espinillos Donde poder escuchar el canto de las aves. Pájaros
+							carpinteros, picaflor, tijeretas, horneros, calandrias, todos de
+							esta región del país. En nuestra área protegida, monte autóctono
+							podrás ver paseas libremente nuestros respetados zorros, liebres y
+							cuises.
 						</p>
 					</div>
 					<div className='flex flex-col items-center'>

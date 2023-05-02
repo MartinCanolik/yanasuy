@@ -12,7 +12,7 @@ import { arboles } from "../../assets/Assets";
 const Home = ({ isMobile }) => {
 	const navigate = useNavigate();
 	const lgTitle =
-		"flex justify-center items-center p-5 m-auto text-white lg:text-2xl font-body bg-brown lg:h-[45%] w-full";
+		"flex justify-center items-center p-5 m-auto text-stone-800 lg:text-2xl font-bold font-body bg-red-300 lg:h-[45%] w-full";
 	return (
 		<>
 			{!isMobile && (
@@ -49,7 +49,7 @@ const Home = ({ isMobile }) => {
 			)}
 
 			<div
-				className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[40vh] lg:w-[890px]`}>
+				className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[20vh] lg:w-[890px]`}>
 				<h1>Nuestras Cabañas</h1>
 			</div>
 			<div className='flex flex-col justify-center bg-nav p-5 px-10 mt-[10vh] lg:mt-[15vh] m-auto rounded-lg lg:h-[400px] lg:w-[800px] '>
@@ -74,7 +74,7 @@ const Home = ({ isMobile }) => {
 			<div className='flex flex-col mt-[10vh] justify-center'>
 				<div className='flex flex-col lg:flex-row justify-center gap-[10vh] items-center'>
 					<div className='flex flex-col gap-[10vh] lg:gap-10'>
-						<h1 className='p-5 m-auto text-white text-center text-xl font-body bg-brown lg:rounded-xl w-full lg:w-[500px]'>
+						<h1 className='p-5 m-auto text-stone-800 text-center text-xl font-bold font-body bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
 							Cabaña Norte
 						</h1>
 						<div
@@ -93,7 +93,7 @@ const Home = ({ isMobile }) => {
 						</div>
 					</div>
 					<div className='flex flex-col gap-[10vh] lg:gap-10 '>
-						<div className='p-5 m-auto text-white text-center text-xl font-body bg-brown lg:rounded-xl w-full lg:w-[500px]'>
+						<div className='p-5 m-auto text-stone-800 text-center text-xl font-bold bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
 							<h1>Cabaña Sur</h1>
 						</div>
 						<div
@@ -137,7 +137,7 @@ const Home = ({ isMobile }) => {
 				</div>
 				<div className='flex flex-col lg:flex-row justify-center gap-[10vw] mt-[10vh] mb-[15vh] items-center'>
 					<div className='flex flex-col gap-[10vh] lg:gap-10 '>
-						<h1 className='p-5 m-auto text-white text-center text-xl font-body bg-brown lg:rounded-xl w-full lg:w-[500px]'>
+						<h1 className='p-5 m-auto text-stone-800 font-bold font-body text-center text-xl font-stone-800 bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
 							Piscina
 						</h1>
 						<div className='relative lg:h-[300px] lg:w-[500px] cursor-pointer overflow-hidden '>
@@ -154,7 +154,7 @@ const Home = ({ isMobile }) => {
 						</div>
 					</div>
 					<div className='flex flex-col gap-[10vh] mt-[5vh]  lg:gap-10 '>
-						<div className='p-5 m-auto text-white text-center text-xl font-body bg-brown lg:rounded-xl w-full lg:w-[500px]'>
+						<div className='p-5 m-auto text-stone-800 text-center text-xl font-body font-bold bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
 							<h1>Parque</h1>
 						</div>
 						<div className='relative lg:h-[300px] lg:w-[500px] cursor-pointer overflow-hidden '>
