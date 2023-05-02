@@ -212,7 +212,7 @@ const Cabañas = () => {
 					<h1>Piscina</h1>
 				</div>
 			</div>
-			<div className='flex justify-center lg:px-[8vw] gap-10  lg:mt-10 mb-10'>
+			<div className='flex justify-center lg:px-[8vw] gap-10  lg:mt-20 mb-10'>
 				<div className='flex flex-col w-full lg:full justify-center'>
 					<Carousel
 						autoPlay={true}
@@ -259,7 +259,7 @@ const Cabañas = () => {
 								navigate("/contacto");
 							}}
 							// disabled={isSubmitting}
-							className=' bg-brown hover:bg-nav text-white font-bold mx-auto mt-2 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
+							className=' bg-red-400 hover:bg-nav text-white font-bold mx-auto my-4 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
 							Mas informacion
 						</button>
 					</div>
@@ -294,22 +294,24 @@ const Cabañas = () => {
 					<div className='mx-5'>
 						<div>
 							<h1 className='font-bold text-2xl text-slate-700 mt-20'>
-								Piscina
+								Parque
 							</h1>
 						</div>
 						<hr className='border-2 border-slate-300 mt-2' />
 						<ul className='my-5 mx-5 text-slate-500 leading-7 pt-5 font-medium list-disc'>
 							<li>
 								<h2 className='text-slate-700 font-bold'>
-									PISCINA CON YACUZZI{" "}
+									FLORA Y FAUNA AUTÓCTONA
 								</h2>
-								de 18 metros x 8 metros rodeada por almendros y molles. Con
-								reposeras y lugar de descanso.
-							</li>
-							<li>
-								<h2 className='text-slate-700 font-bold'>Quincho </h2>de 8
-								metros x 5 metros, con mesones y sillones de madera y una mesa
-								de Ping Pong para que puedan divertirse en familia.
+								<br />
+								Ubicado a 1000 metros sobre el nivel del mar a solo 5 minutos de
+								la Av. del Sol te espera una hectárea paradisiaca, arbolada
+								respectando la naturaleza autóctona frutales, nogales,
+								almendros, molles, piscos, tabaquillos, espinillos Donde poder
+								escuchar el canto de las aves. Pájaros carpinteros, picaflor,
+								tijeretas, horneros, calandrias, todos de esta región del país.
+								En nuestra área protegida, monte autóctono podrás ver paseas
+								libremente nuestros respetados zorros, liebres y cuises.
 							</li>
 						</ul>
 						<button
@@ -317,7 +319,7 @@ const Cabañas = () => {
 								navigate("/contacto");
 							}}
 							// disabled={isSubmitting}
-							className=' bg-brown hover:bg-nav text-white font-bold mx-auto mt-2 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
+							className=' bg-red-400 hover:bg-nav text-white font-bold mx-auto my-4 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
 							Mas informacion
 						</button>
 					</div>

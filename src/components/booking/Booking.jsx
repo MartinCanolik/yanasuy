@@ -278,7 +278,7 @@ const Booking = () => {
 							<button
 								type='submit'
 								// disabled={isSubmitting}
-								className='bg-brown hover:bg-nav text-white font-bold  py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800  disabled:opacity-5'>
+								className='bg-red-400 hover:bg-nav text-white font-bold  py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800  disabled:opacity-5'>
 								Enviar
 							</button>
 						</div>
