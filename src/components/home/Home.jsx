@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Reviews } from "../../assets/reviews";
 import Comments from "../comments/Comments";
@@ -12,7 +12,14 @@ import { arboles } from "../../assets/Assets";
 const Home = ({ isMobile }) => {
 	const navigate = useNavigate();
 	const lgTitle =
-		"flex justify-center items-center p-5 m-auto text-stone-800 lg:text-2xl font-bold font-body bg-red-300 lg:h-[45%] w-full";
+		"flex justify-center items-center p-5 m-auto text-stone-700 lg:text-2xl font-bold font-body bg-pink lg:h-[45%] w-full";
+	const scrollTO = () => {
+		window.scrollTo(0, 0);
+	};
+
+	useEffect(() => {
+		scrollTO();
+	}, []);
 	return (
 		<>
 			{!isMobile && (
@@ -74,7 +81,7 @@ const Home = ({ isMobile }) => {
 			<div className='flex flex-col mt-[10vh] justify-center'>
 				<div className='flex flex-col lg:flex-row justify-center gap-[10vh] items-center'>
 					<div className='flex flex-col gap-[10vh] lg:gap-10'>
-						<h1 className='p-5 m-auto text-stone-800 text-center text-xl font-bold font-body bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
+						<h1 className='p-5 m-auto text-stone-700 text-center text-xl font-bold font-body bg-pink lg:rounded-xl w-full lg:w-[500px]'>
 							Cabaña Norte
 						</h1>
 						<div
@@ -93,7 +100,7 @@ const Home = ({ isMobile }) => {
 						</div>
 					</div>
 					<div className='flex flex-col gap-[10vh] lg:gap-10 '>
-						<div className='p-5 m-auto text-stone-800 text-center text-xl font-bold bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
+						<div className='p-5 m-auto text-stone-700 text-center text-xl font-bold bg-pink lg:rounded-xl w-full lg:w-[500px]'>
 							<h1>Cabaña Sur</h1>
 						</div>
 						<div
@@ -137,7 +144,7 @@ const Home = ({ isMobile }) => {
 				</div>
 				<div className='flex flex-col lg:flex-row justify-center gap-[10vw] mt-[10vh] mb-[15vh] items-center'>
 					<div className='flex flex-col gap-[10vh] lg:gap-10 '>
-						<h1 className='p-5 m-auto text-stone-800 font-bold font-body text-center text-xl font-stone-800 bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
+						<h1 className='p-5 m-auto text-stone-700 font-bold font-body text-center text-xl font-stone-700 bg-pink lg:rounded-xl w-full lg:w-[500px]'>
 							Piscina
 						</h1>
 						<div className='relative lg:h-[300px] lg:w-[500px] cursor-pointer overflow-hidden '>
@@ -154,7 +161,7 @@ const Home = ({ isMobile }) => {
 						</div>
 					</div>
 					<div className='flex flex-col gap-[10vh]   lg:gap-10 '>
-						<div className='p-5 m-auto text-stone-800 text-center text-xl font-body font-bold bg-red-300 lg:rounded-xl w-full lg:w-[500px]'>
+						<div className='p-5 m-auto text-stone-700 text-center text-xl font-body font-bold bg-pink lg:rounded-xl w-full lg:w-[500px]'>
 							<h1>Parque</h1>
 						</div>
 						<div className='relative lg:h-[300px] lg:w-[500px] cursor-pointer overflow-hidden '>

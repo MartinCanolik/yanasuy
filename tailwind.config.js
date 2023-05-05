@@ -7,7 +7,7 @@ module.exports = {
 				primary: "#14b8a6",
 				logo: "#0091cf",
 				secondary: "#ef4444",
-
+				pink: "#f87171",
 				primary2: "#06b6d4",
 				white: "#f0fdfa",
 				customRed: "#CE2A3A",

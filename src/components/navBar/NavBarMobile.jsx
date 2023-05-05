@@ -14,7 +14,12 @@ const NavBarMobile = () => {
 	return (
 		<nav className='fixed top-0 w-full z-50 '>
 			<div className='flex bg-nav h-[20vh] items-center justify-between max-w-7xl mx-auto px-5 sm:px-6 lg:px-8'>
-				<div className='cursor-pointer' onClick={() => navigate("/")}>
+				<div
+					className='cursor-pointer'
+					onClick={() => {
+						navigate("/");
+						setIsOpen(false);
+					}}>
 					<img className='w-[55vw]' src={LogoMobile} alt='logo cabanias' />
 				</div>
 
@@ -65,10 +70,6 @@ const NavBarMobile = () => {
 						: " transition-all duration-300 transform translate-x-full opacity-0 absolute bg-gray-800 z-50 top-[19vh] h-[100vh] w-[100vw]"
 				} md:hidden`}>
 				<ul className='flex flex-col items-center pt-[30%] gap-10'>
-					<li className='flex text-white text-sm font-body tracking-wide cursor-pointer'>
-						<a className='list-link'>MERLO </a>
-					</li>
-					<hr className='border-1 border-white opacity-50 w-1/3' />
 					<li
 						className='flex text-white text-sm font-body tracking-wide cursor-pointer'
 						onClick={() => {
@@ -94,6 +95,16 @@ const NavBarMobile = () => {
 							setIsOpen(false);
 						}}>
 						<a className='list-link'>CONTACTO</a>
+					</li>
+					<hr className='border-1 border-white opacity-50 w-1/3' />
+
+					<li
+						className='flex text-white text-sm font-body tracking-wide cursor-pointer'
+						onClick={() => {
+							navigate("/merlo");
+							setIsOpen(false);
+						}}>
+						<a className='list-link'>MERLO </a>
 					</li>
 				</ul>
 			</div>

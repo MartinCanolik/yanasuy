@@ -53,3 +53,19 @@ export const adventure = [
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683043695/merlo-activity-4_v4kg2m.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683043694/merlo-activity-5_kvusj7.jpg",
 ];
+
+export const merloImg = [
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683144022/6146025d83016580367141_mech6i.jpg",
+	"https://i0.wp.com/leerdelviaje.com/wp-content/uploads/2019/10/20191006_151343.jpg?resize=1585.25%2C797&ssl=1",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683144022/6146052a6fdc2905600759_xtmiaf.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683144022/61460488e3d39763564916_ho3kuf.jpg",
+	"https://blog.iunigo.com.ar/wp-content/uploads/2022/12/Merlo_SanLuis-1-iunigo.jpeg",
+	"https://www.miviaje.info/wp-content/uploads/2015/08/CASCADA-MERLO.jpg",
+];
+
+export const homeImg = [
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404401/yanasuyVistasierra_kokuei.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676403664/piletayplantasCarousel_lf0g4t.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404390/yanasuyVistaCabania_llle5i.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404371/yanasuyVistaCabania2_kgmrfz.jpg",
+];

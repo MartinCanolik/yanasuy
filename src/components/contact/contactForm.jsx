@@ -23,6 +23,7 @@ const ContactForm = () => {
 	};
 
 	const submitForm = async (values) => {
+		console.log("entre");
 		try {
 			const response = await axios({
 				method: "post",
@@ -67,90 +68,100 @@ const ContactForm = () => {
 		<div className='lg:w-1/2 w-full flex flex-col'>
 			<Formik
 				initialValues={{
+					adults: "",
+					children: "",
 					firstName: "",
+					lastName: "",
 					email: "",
-					phone: "",
 					query: "",
+					phone: "",
+					startDate: "",
+					endDate: "",
 				}}
 				onSubmit={(values, { resetForm }) => {
+					console.log("la concha de la lora");
 					submitForm({ ...values });
 					resetForm();
 				}}
 				validationSchema={validationSchema}>
-				<Form>
-					<h1 className='font-semibold text-3xl text-teal-700'>Contactenos</h1>
-					<hr className='border-2 border-slate-300 my-5 w-[20%]' />
+				{({ isSubmitting, errors }) => (
+					<Form>
+						<h1 className='font-semibold text-3xl text-teal-700'>
+							Contactenos
+						</h1>
+						<hr className='border-2 border-slate-300 my-5 w-[20%]' />
 
-					<label
-						htmlFor='firstName '
-						className='font-semibold text-headerBlack'>
-						Nombre
-					</label>
-					<Field
-						type='text'
-						name='firstName'
-						className='appearance-none text-sm mt-2 py-2 px-3 w-full text-sm mt-2 py-2 px-3  text-gray-700 border-2 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
-					/>
-					<ErrorMessage name='firstName'>
-						{(msg) => (
-							<div className='text-customRed italic pl-1 text-xs font-semibold'>
-								{msg}
-							</div>
-						)}
-					</ErrorMessage>
-					<div>
-						<label htmlFor='email' className=''>
-							Email
+						<label
+							htmlFor='firstName '
+							className='font-semibold text-headerBlack'>
+							Nombre
 						</label>
 						<Field
 							type='text'
-							name='email'
-							className='appearance-none text-sm mt-2 py-2 px-3 w-full text-sm mt-2 py-2 px-3 text-gray-700 border-2 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
-						/>
-						<ErrorMessage name='email'>
-							{(msg) => (
-								<div className='text-customRed italic pl-1 text-xs font-semibold'>
-									{msg}
-								</div>
-							)}
-						</ErrorMessage>
-					</div>
-					<div>
-						<label htmlFor='phone' className=''>
-							Telefono
-						</label>
-						<Field
-							type='text'
-							name='phone'
+							name='firstName'
 							className='appearance-none text-sm mt-2 py-2 px-3 w-full text-sm mt-2 py-2 px-3  text-gray-700 border-2 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
 						/>
-						<ErrorMessage name='phone'>
+						<ErrorMessage name='firstName'>
 							{(msg) => (
 								<div className='text-customRed italic pl-1 text-xs font-semibold'>
 									{msg}
 								</div>
 							)}
 						</ErrorMessage>
-					</div>
-					<label htmlFor='query' className=''>
-						Consulta
-					</label>
-					<div>
-						<Field
-							placeholder='Deje su consulta...'
-							component='textarea'
-							name='query'
-							className='appearance-none text-sm mt-2 py-2 px-3 w-full  h-20 bg-slate-100 text-gray-700 border-2 border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 scroll-y'
-						/>
-					</div>
+						<div>
+							<label htmlFor='email' className=''>
+								Email
+							</label>
+							<Field
+								type='text'
+								name='email'
+								className='appearance-none text-sm mt-2 py-2 px-3 w-full text-sm mt-2 py-2 px-3 text-gray-700 border-2 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
+							/>
+							<ErrorMessage name='email'>
+								{(msg) => (
+									<div className='text-customRed italic pl-1 text-xs font-semibold'>
+										{msg}
+									</div>
+								)}
+							</ErrorMessage>
+						</div>
+						<div>
+							<label htmlFor='phone' className=''>
+								Telefono
+							</label>
+							<Field
+								type='text'
+								name='phone'
+								className='appearance-none text-sm mt-2 py-2 px-3 w-full text-sm mt-2 py-2 px-3  text-gray-700 border-2 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
+							/>
+							<ErrorMessage name='phone'>
+								{(msg) => (
+									<div className='text-customRed italic pl-1 text-xs font-semibold'>
+										{msg}
+									</div>
+								)}
+							</ErrorMessage>
+						</div>
+						<label htmlFor='query' className=''>
+							Consulta
+						</label>
+						<div>
+							<Field
+								placeholder='Deje su consulta...'
+								component='textarea'
+								name='query'
+								className='appearance-none text-sm mt-2 py-2 px-3 w-full  h-20 bg-slate-100 text-gray-700 border-2 border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 scroll-y'
+							/>
+						</div>
 
-					<button
-						type='submit'
-						// disabled={isSubmitting}
-						className=' bg-red-400 hover:bg-nav text-white font-bold mx-auto mt-2 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
-						Enviar
-					</button>
-				</Form>
+						<button
+							// disabled={isSubmitting}
+							type='submit'
+							className=' bg-red-400 hover:bg-nav text-white font-bold mx-auto mt-2 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
+							Enviar
+						</button>
+					</Form>
+				)}
 			</Formik>
 		</div>
 	);
