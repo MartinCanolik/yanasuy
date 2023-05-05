@@ -12,7 +12,12 @@ const NavBar = () => {
 		Swal.fire("Lo sentimos, aun no hay promociones disponibles");
 	};
 	return (
-		<nav className={location.pathname === "/" ? "bg-nav h-[70vh]" : "bg-nav"}>
+		<nav
+			className={
+				location.pathname === "/" || location.pathname === "/merlo"
+					? "bg-nav h-[70vh]"
+					: "bg-nav"
+			}>
 			<ul className='flex justify-evenly items-center py-10'>
 				<li
 					className='flex gap-20 text-white text-lg font-body tracking-wide cursor-pointer'
