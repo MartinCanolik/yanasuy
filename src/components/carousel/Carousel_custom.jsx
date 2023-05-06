@@ -27,11 +27,19 @@ const CarouselCustom = () => {
 		<div>
 			{condition && (
 				<Carousel
-					autoPlay={true}
+					// autoPlay={true}
 					showThumbs={false}
 					showIndicators={true}
 					infiniteLoop={true}
 					showStatus={false}>
+					<video autoPlay loop muted>
+						<source
+							src={
+								"https://res.cloudinary.com/drhj3sc2o/video/upload/v1683389515/V%C3%ADdeo_sin_t%C3%ADtulo_Hecho_con_Clipchamp_ahqgr4.mp4"
+							}
+							type='video/mp4'
+						/>
+					</video>
 					{images &&
 						images.map((el, idx) => {
 							return (

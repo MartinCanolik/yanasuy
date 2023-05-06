@@ -56,10 +56,10 @@ const Home = ({ isMobile }) => {
 			)}
 
 			<div
-				className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[20vh] lg:w-[890px]`}>
+				className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[10vh] lg:w-[890px]`}>
 				<h1>Nuestras Cabañas</h1>
 			</div>
-			<div className='flex flex-col justify-center bg-nav p-5 px-10 mt-[10vh] lg:mt-[15vh] m-auto rounded-lg lg:h-[400px] lg:w-[800px] '>
+			<div className='flex flex-col justify-center bg-nav p-5 px-10 mt-[10vh] lg:mt-[10vh] m-auto rounded-lg lg:h-[400px] lg:w-[800px] '>
 				<div className='flex items-center  align-center bg-black/25 p-5 rounded-lg '>
 					<h1 className='text-white text-sm mx-auto lg:text-xl font-body'>
 						CABAÑAS DE PIEDRA Y TRONCO
@@ -122,7 +122,7 @@ const Home = ({ isMobile }) => {
 				<div className={`${lgTitle} mt-[10vh]`}>
 					<h1>Nuestro Parque</h1>
 				</div>
-				<div className='flex flex-col justify-center bg-nav p-5 mt-[10vh] lg:mt-[15vh] m-auto rounded-lg lg:h-[400px] lg:w-[1000px] '>
+				<div className='flex flex-col justify-center bg-nav p-5 mt-[10vh] lg:mt-[10vh] m-auto rounded-lg lg:h-[400px] lg:w-[1000px] '>
 					<div className='flex items-center  align-center bg-black/25 p-5 rounded-lg '>
 						<h1 className='text-white text-sm mx-auto lg:text-xl font-body'>
 							UNA HECTÀREA PARQUIZADA
