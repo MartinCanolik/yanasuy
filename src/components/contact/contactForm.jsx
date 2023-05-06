@@ -1,8 +1,9 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { validationSchema } from "../../schema/schema";
+import { contactSchema } from "../../schema/contactSchema";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { Logo } from "../../assets/Assets";
 
 const ContactForm = () => {
 	const swappUpSuccess = (name) => {
@@ -30,7 +31,7 @@ const ContactForm = () => {
 				url: "https://api.sendinblue.com/v3/smtp/email",
 				data: {
 					sender: {
-						name: `${values.firstName} ${values.lastName}`,
+						name: `${values.firstName}`,
 						email: "martin.canolik@gmail.com",
 					},
 					to: [
@@ -41,13 +42,13 @@ const ContactForm = () => {
 					],
 					subject: "Solicitud De Reserva !",
 					htmlContent: `<html><head></head><body>
+					<img src=${Logo} alt="logo"/>
+					<div style="margin: auto;">
 						<h2>Consulta: </h2>
 						<p>${values.query}</p>
-						<span><b>Adultos: </b> ${values.adults}</span><br>
-						<span><b>Niños: </b> ${values.children}</span><br>
 						<span><b>Email: </b> ${values.email}</span><br>
 						<span><b>Telefono: </b> ${values.phone}</span><br>
-						<span><b>Desde: </b> ${values.startDate} <b>Hasta: </b> ${values.endDate}</span><br>
+					</div>
 						</body></html>`,
 				},
 				headers: {
@@ -68,22 +69,16 @@ const ContactForm = () => {
 		<div className='lg:w-1/2 w-full flex flex-col'>
 			<Formik
 				initialValues={{
-					adults: "",
-					children: "",
 					firstName: "",
-					lastName: "",
 					email: "",
-					query: "",
 					phone: "",
-					startDate: "",
-					endDate: "",
+					query: "",
 				}}
 				onSubmit={(values, { resetForm }) => {
-					console.log("la concha de la lora");
 					submitForm({ ...values });
 					resetForm();
 				}}
-				validationSchema={validationSchema}>
+				validationSchema={contactSchema}>
 				{({ isSubmitting, errors }) => (
 					<Form>
 						<h1 className='font-semibold text-3xl text-teal-700'>
