@@ -24,7 +24,6 @@ const ContactForm = () => {
 	};
 
 	const submitForm = async (values) => {
-		console.log("entre");
 		try {
 			const response = await axios({
 				method: "post",
