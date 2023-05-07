@@ -74,27 +74,29 @@ const Merlo = ({ isMobile }) => {
 					</h1>
 					<hr className='border-2 border-slate-500 mt-5 w-[20%]' />
 				</div>
-				<div className='mb-10'>
-					<Carousel
-						autoPlay={true}
-						showThumbs={false}
-						showIndicators={true}
-						infiniteLoop={true}
-						showStatus={false}>
-						{adventureCarousel &&
-							adventureCarousel.map((el, idx) => {
-								return (
-									<div key={idx}>
-										<img
-											className='object-cover h-[40vh]'
-											src={el}
-											alt={"el"}
-										/>
-									</div>
-								);
-							})}
-					</Carousel>
-				</div>
+				{isMobile && (
+					<div className='mb-10'>
+						<Carousel
+							autoPlay={true}
+							showThumbs={false}
+							showIndicators={true}
+							infiniteLoop={true}
+							showStatus={false}>
+							{adventureCarousel &&
+								adventureCarousel.map((el, idx) => {
+									return (
+										<div key={idx}>
+											<img
+												className='object-cover h-[40vh]'
+												src={el}
+												alt={"el"}
+											/>
+										</div>
+									);
+								})}
+						</Carousel>
+					</div>
+				)}
 
 				<div className='flex flex-col  lg:flex-row text-lg h-full text-gray-800 '>
 					<div className='flex flex-col gap-5 w-full lg:w-2/3 px-10 lg:px-10'>
@@ -162,14 +164,16 @@ const Merlo = ({ isMobile }) => {
 									observaciones a través de telescopios móviles.
 								</p>
 							</li>
+							<a
+								href='https://villademerlo.tur.ar/'
+								// disabled={isSubmitting}
+								target="blank"
+								className=' bg-red-400 hover:bg-nav text-white font-bold mx-auto my-4 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
+								Mas informacion
+							</a>
 						</ul>
 					</div>
-					<a
-						href='https://villademerlo.tur.ar/'
-						// disabled={isSubmitting}
-						className=' bg-red-400 hover:bg-nav text-white font-bold mx-auto my-4 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
-						Mas informacion
-					</a>
+
 					{!isMobile && (
 						<div className='flex flex-col h-full w-1/3'>
 							{adventure &&
