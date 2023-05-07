@@ -41,7 +41,7 @@ function App() {
 				<Route path='/contacto' element={<Contact />} />
 				<Route path='/promociones' element={<Booking />} />
 				<Route path='/cabañas' element={<Cabañas />} />
-				<Route path='/merlo' element={<Merlo />} />
+				<Route path='/merlo' element={<Merlo isMobile={isMobile} />} />
 
 				<Route path='/cabañas/:name' element={<Cabañas />} />
 			</Routes>
