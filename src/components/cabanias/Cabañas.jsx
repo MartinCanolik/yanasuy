@@ -225,7 +225,7 @@ const Cabañas = () => {
 								return (
 									<div className='' key={idx}>
 										<img
-											className='object-cover h-[60vh]'
+											className='object-cover h-[40vh] lg:h-[60vh]'
 											src={el}
 											alt={"el"}
 										/>
@@ -283,7 +283,7 @@ const Cabañas = () => {
 								return (
 									<div className='' key={idx}>
 										<img
-											className='object-cover h-[60vh]'
+											className='object-cover h-[40vh] lg:h-[60vh]'
 											src={el}
 											alt={"el"}
 										/>
