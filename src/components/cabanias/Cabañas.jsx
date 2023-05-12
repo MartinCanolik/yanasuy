@@ -87,7 +87,7 @@ const Cabañas = () => {
 								</h2>
 								<ul className='text-slate-500 lg:text-base  text-sm lg:leading-7 pt-5 font-medium list-disc'>
 									<li>Microondas.</li>
-									<li>Heladera con Frezzer.</li>
+									<li>Heladera con Freezer.</li>
 									<li>Pava eléctrica.</li>
 									<li>Cafetera eléctrica.</li>
 									<li>Tostadora eléctrica.</li>
@@ -109,8 +109,8 @@ const Cabañas = () => {
 										Dos habitaciones confortables amplias y luminosas con vista
 										a la sierra.
 									</li>
-									<li>Camas matrimonial queen size con colchón de resorte </li>
-									<li>Camas individuales también con colchón de resorte.</li>
+									<li>cama matrimonial queen size con colchón de resorte </li>
+									<li>Cama individuale con colchón de resorte.</li>
 									<li>Extra carro con colchón de goma espuma.</li>
 									<li>Mesas de luz</li>
 									<li>Placard. Mueble</li>
@@ -167,7 +167,7 @@ const Cabañas = () => {
 								</h2>
 								<ul className='text-slate-500 lg:leading-7 lg:text-base text-sm pt-5 font-medium list-disc'>
 									<li>Microondas.</li>
-									<li>Heladera con Frezzer.</li>
+									<li>Heladera con Freezer.</li>
 									<li>Pava eléctrica.</li>
 									<li>Cafetera eléctrica.</li>
 									<li>Tostadora eléctrica.</li>
@@ -189,8 +189,8 @@ const Cabañas = () => {
 										Dos habitaciones confortables amplias y luminosas con vista
 										al valle.
 									</li>
-									<li>Camas matrimonial queen size con colchón de resorte </li>
-									<li>Camas individuales también con colchón de resorte.</li>
+									<li>cama matrimonial queen size con colchón de resorte </li>
+									<li>Cama individual con colchón de resorte.</li>
 									<li>Extra carro con colchón de goma espuma.</li>
 									<li>Mesas de luz</li>
 									<li>Placard. Mueble</li>
@@ -304,14 +304,13 @@ const Cabañas = () => {
 									FLORA Y FAUNA AUTÓCTONA
 								</h2>
 								<br />
-								Ubicado a 1000 metros sobre el nivel del mar a solo 5 minutos de
-								la Av. del Sol te espera una hectárea paradisiaca, arbolada
-								respectando la naturaleza autóctona frutales, nogales,
-								almendros, molles, piscos, tabaquillos, espinillos Donde poder
-								escuchar el canto de las aves. Pájaros carpinteros, picaflor,
-								tijeretas, horneros, calandrias, todos de esta región del país.
-								En nuestra área protegida, monte autóctono podrás ver paseas
-								libremente nuestros respetados zorros, liebres y cuises.
+								Una hectárea paradisiaca, arbolada respectando la naturaleza
+								autóctona frutales, nogales, almendros, molles, tabaquillos,
+								espinillos Donde poder escuchar el canto de las aves. Pájaros
+								carpinteros, colibries, tijeretas, horneros, calandrias, todos
+								de esta región del país. En nuestra área protegida, monte
+								autóctono podrás ver paseas libremente nuestros respetados
+								zorros, liebres y cuises.
 							</li>
 						</ul>
 						<button
