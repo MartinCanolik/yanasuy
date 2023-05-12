@@ -40,7 +40,7 @@ const CarouselCustom = () => {
 							muted>
 							<source
 								src={
-									"https://res.cloudinary.com/drhj3sc2o/video/upload/v1683389515/V%C3%ADdeo_sin_t%C3%ADtulo_Hecho_con_Clipchamp_ahqgr4.mp4"
+									"https://res.cloudinary.com/drhj3sc2o/video/upload/v1683908932/V%C3%ADdeo_sin_t%C3%ADtulo_Hecho_con_Clipchamp_1_e4tybq.mp4"
 								}
 								type='video/mp4'
 							/>

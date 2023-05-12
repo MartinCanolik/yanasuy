@@ -167,7 +167,7 @@ const Merlo = ({ isMobile }) => {
 							<a
 								href='https://villademerlo.tur.ar/'
 								// disabled={isSubmitting}
-								target="blank"
+								target='blank'
 								className=' bg-red-400 hover:bg-nav text-white font-bold mx-auto my-4 py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800 disabled:opacity-5'>
 								Mas informacion
 							</a>
