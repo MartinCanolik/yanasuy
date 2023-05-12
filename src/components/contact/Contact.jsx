@@ -56,16 +56,14 @@ const Contact = () => {
 							TUS CABAÑAS EN MERLO SAN LUIS
 						</h2>
 						<p className='text-slate-500 text-base  leading-6 pt-5 font-normal list-disc'>
-							“UBICACIÓN PRIVILEGIADA VISTA PANORÁMICA A LA SIERRA DE LOS
-							COMECHINGONES Y AL VALLE DE CONLARA” Ubicada a 1000 metros sobre
-							el nivel del mar a solo 5 minutos de la Av. del Sol te espera una
-							hectárea paradisiaca, arbolada respectando la naturaleza autóctona
-							frutales, nogales, almendros, molles, piscos, tabaquillos,
-							espinillos Donde poder escuchar el canto de las aves. Pájaros
-							carpinteros, picaflor, tijeretas, horneros, calandrias, todos de
-							esta región del país. En nuestra área protegida, monte autóctono
-							podrás ver paseas libremente nuestros respetados zorros, liebres y
-							cuises.
+							Ubicada a 1000 metros sobre el nivel del mar a solo 5 minutos de
+							la Av. del Sol te espera una hectárea paradisiaca, arbolada
+							respetando la naturaleza autóctona. Frutales, nogales, almendros,
+							molles, tabaquillos y espinillos. Donde poder escuchar el canto de
+							las aves. Pájaros carpinteros, colibríes, tijeretas, horneros,
+							calandrias, todos de esta región del país. En nuestra área
+							protegida, monte autóctono, podrás ver pasear libremente nuestros
+							respetados zorros, liebres y cuises.
 						</p>
 					</div>
 					<div className='flex flex-col items-center'>

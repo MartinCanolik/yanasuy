@@ -130,15 +130,15 @@ const Home = ({ isMobile }) => {
 					</div>
 					<div className='text-white text-xm bg-black/25 mt-5 mb-10 p-5 rounded-lg'>
 						<p className='lg:leading-7 mt-2'>
-							Te espera una increíble hectárea con VISTA PANÓRAMICA A LA SIERRA
-							DE LOS COMECHINGONES. Un amplio parque con una hermosa PISCINA CON
-							YACUZZI de 18 metros x 8 metros rodeada por almendros y molles.
-							Con reposeras y lugar de descanso. QUINCHO de 8 metros x 5 metros,
-							con mesones y sillones de madera y una mesa de Ping Pong para que
-							puedan divertirse en familia. ARCOS DE FUTBOL Y HAMACA SECTOR
-							DEJEMOS HUELLAS BONITAS, hermoso sector para crear arte y
-							recuerdos. SECTOR DE DESCANSO Y LECTURA o bien para tomar unos
-							ricos mates rodeado de molles que le da una hermosa sombra
+							Te espera una increíble hectárea con VISTA PANORÁMICA A LA SIERRA
+							DE LOS COMECHINGONES. Amplio parque con una hermosa PISCINA CON
+							YACUZZI de 18 metros x 8 metros rodeada por almendros y molles,
+							con reposeras y lugar de descanso. Arcos de Futbol y Hamaca
+							QUINCHO de 8 metros x 5 metros, con mesones y sillones de madera y
+							una mesa de Ping Pong para que puedan divertirse en familia.
+							SECTOR DEJEMOS HUELLAS BONITAS, hermoso lugar para crear arte y
+							dejar recuerdos. SECTOR DE DESCANSO Y LECTURA o bien para tomar
+							unos ricos mates a la sombra de molles.
 						</p>
 					</div>
 				</div>

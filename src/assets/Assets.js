@@ -67,9 +67,12 @@ export const merloImg = [
 ];
 
 export const homeImg = [
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568850/atardecer_carousel_cej5s7.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568807/piletaCarouselNueva_fwy7dr.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404401/yanasuyVistasierra_kokuei.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676403664/piletayplantasCarousel_lf0g4t.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404390/yanasuyVistaCabania_llle5i.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404371/yanasuyVistaCabania2_kgmrfz.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568738/IMG-20230506-WA0019_t3hcsa.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568903/sociedad_z4spdo.jpg",
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568891/parqueNoche_mhiwrf.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568903/sociedad_z4spdo.jpg",
 ];
