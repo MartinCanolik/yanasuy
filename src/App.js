@@ -4,7 +4,7 @@ import Home from "./components/home/Home.jsx";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/navBar/NavBar";
 import NavBarMobile from "./components/navBar/NavBarMobile";
-
+import { icono } from "./assets/Assets";
 import CarouselCustom from "./components/carousel/Carousel_custom";
 import Contact from "./components/contact/Contact";
 import Booking from "./components/booking/Booking";
@@ -25,6 +25,11 @@ function App() {
 
 		// limpia el event listener cuando se desmonta el componente
 		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
+	useEffect(() => {
+		const favicon = document.querySelector('link[rel="icon"]');
+		favicon.href = icono;
 	}, []);
 
 	return (

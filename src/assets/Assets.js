@@ -12,6 +12,9 @@ export const Logo =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1681249084/A_color_letras_blancas_dlzn22.png";
 export const LogoMobile =
 	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1681248175/A_color_horizontal_letras_blancas_phbgwe.png";
+
+export const icono =
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683912682/288647981_159432233250467_7958409299853297874_n_lcvjxa.jpg";
 //carousel
 
 export const surImg = [
