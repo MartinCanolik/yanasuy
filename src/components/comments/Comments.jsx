@@ -160,7 +160,6 @@ const Comments = ({ isMobile }) => {
 									className=' flex align-center rounded-xl h-[60vh] bg-black/50 p-5 pt-10'>
 									<div className='flex flex-col w-full items-center justify-center'>
 										<div className='h-1/3 '>
-											{console.log(review.logo)}
 											<img
 												src={
 													review.logo === "logoBooking"

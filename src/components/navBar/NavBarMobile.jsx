@@ -7,6 +7,30 @@ const NavBarMobile = () => {
 	const navigate = useNavigate();
 	const [isOpen, setIsOpen] = useState(false);
 
+	const blockScroll = () => {
+		const scrollPosition =
+			window.pageYOffset || document.documentElement.scrollTop;
+		document.body.style.overflow = "hidden";
+		document.body.style.position = "fixed";
+		document.body.style.top = `-${scrollPosition}px`;
+	};
+
+	// Desbloquear el scroll del elemento window al desmontar el componente
+	const unblockScroll = () => {
+		const scrollPosition = parseInt(
+			document.body.style.top.replace(/[^-\d\.]/g, "")
+		);
+		document.body.style.overflow = "";
+		document.body.style.position = "";
+		document.body.style.top = "";
+		window.scrollTo(0, Math.abs(scrollPosition));
+	};
+
+	const handleMenu = () => {
+		!isOpen ? blockScroll() : unblockScroll();
+		setIsOpen(!isOpen);
+	};
+
 	const alertPromotions = () => {
 		Swal.fire("Lo sentimos, aun no hay promociones disponibles");
 	};
@@ -25,7 +49,7 @@ const NavBarMobile = () => {
 
 				<div className=' flex '>
 					<button
-						onClick={() => setIsOpen(!isOpen)}
+						onClick={() => handleMenu()}
 						type='button'
 						className='bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'
 						aria-controls='mobile-menu'

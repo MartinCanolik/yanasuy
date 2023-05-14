@@ -34,7 +34,7 @@ const CarouselCustom = () => {
 					showStatus={false}>
 					<div>
 						<video
-							className='object-cover w-full h-[40vh] lg:h-[60vh]'
+							className='object-cover w-full h-[40vh] lg:h-[70vh]'
 							autoPlay
 							loop
 							muted>
@@ -52,7 +52,7 @@ const CarouselCustom = () => {
 							return (
 								<div key={idx}>
 									<img
-										className='object-cover h-[40vh] lg:h-[60vh]'
+										className='object-cover w-full h-[40vh] lg:h-[70vh]'
 										src={el}
 										alt={"el"}
 									/>

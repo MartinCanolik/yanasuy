@@ -67,9 +67,9 @@ const DateRangeComp = ({ setStay }) => {
 		<div ref={refOne} className='relative'>
 			<input
 				className=' cursor-pointer appearance-none text-sm mt-2 py-2 px-3 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
-				value={`${format(range[0].startDate, "dd/MM/yyyy")} - ${format(
+				value={`${format(range[0].startDate, "dd/MM/yy")} - ${format(
 					range[0].endDate,
-					"dd/MM/yyyy"
+					"dd/MM/yy"
 				)}`}
 				readOnly
 				type='text'

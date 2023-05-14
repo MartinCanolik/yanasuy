@@ -38,7 +38,7 @@ function App() {
 
 			<Watsapp />
 
-			<div className='!absolute top-[20vh] lg:top-[40vh] lg:inset-x-[10%]'>
+			<div className='!absolute top-[20vh] lg:top-[40vh] h-[80%] lg:inset-x-[10%]'>
 				<CarouselCustom />
 			</div>
 			<Routes>
