@@ -67,12 +67,19 @@ export const merloImg = [
 ];
 
 export const homeImg = [
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568807/piletaCarouselNueva_fwy7dr.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404401/yanasuyVistasierra_kokuei.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676403664/piletayplantasCarousel_lf0g4t.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404390/yanasuyVistaCabania_llle5i.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404371/yanasuyVistaCabania2_kgmrfz.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568738/IMG-20230506-WA0019_t3hcsa.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568891/parqueNoche_mhiwrf.jpg",
-	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568903/sociedad_z4spdo.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1684086825/imagen_caba%C3%B1a_1_nzgfw6.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1684086825/imagen_caba%C3%B1as_2_asd8qh.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1684086825/imagen_caba%C3%B1as_3_rwt3mm.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1684086825/imagen_caba%C3%B1a_4_fuxtjx.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1684086825/imagen_caba%C3%B1a_5_u8p4ck.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1684086826/imagen_caba%C3%B1a_6_zblzud.jpg",
+	"https://res.cloudinary.com/drhj3sc2o/image/upload/v1684086825/imagen_caba%C3%B1a_7_n2vmk2.jpg",
+	// "https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568807/piletaCarouselNueva_fwy7dr.jpg",
+	// "https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404401/yanasuyVistasierra_kokuei.jpg",
+	// "https://res.cloudinary.com/drhj3sc2o/image/upload/v1676403664/piletayplantasCarousel_lf0g4t.jpg",
+	// "https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404390/yanasuyVistaCabania_llle5i.jpg",
+	// "https://res.cloudinary.com/drhj3sc2o/image/upload/v1676404371/yanasuyVistaCabania2_kgmrfz.jpg",
+	// "https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568738/IMG-20230506-WA0019_t3hcsa.jpg",
+	// "https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568891/parqueNoche_mhiwrf.jpg",
+	// "https://res.cloudinary.com/drhj3sc2o/image/upload/v1683568903/sociedad_z4spdo.jpg",
 ];

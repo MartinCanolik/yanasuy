@@ -25,7 +25,7 @@ const Home = ({ isMobile }) => {
 			{!isMobile && (
 				<div>
 					<div
-						className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[40vh] lg:w-[890px]`}>
+						className={`${lgTitle} lg:rounded-xl mt-[70vh] lg:mt-[50vh] lg:w-[890px]`}>
 						<h1>Nuestra Historia</h1>
 					</div>
 					<div className='flex mt-[10vh] items-center'>
