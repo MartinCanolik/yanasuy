@@ -17,6 +17,8 @@ const Cabañas = () => {
 	const scrollValue = {
 		sur: [0, 291],
 		norte: [0, 1569],
+		piscina: [0, 3279],
+		parque: [0, 4333],
 	};
 
 	const scrollTO = () => {
@@ -34,20 +36,7 @@ const Cabañas = () => {
 
 	return (
 		<div>
-			<div
-				className={`flex 
-					justify-center 
-					items-center 
-					bg-bn 
-					bg-no-repeat 
-					bg-fixed 
-					bg-cover
-					w-full
-					mt-[20vh]
-					lg:mt-0
-					h-[25vh]
-				
-					`}>
+			<div className=' flex justify-center items-center bg-bn bg-no-repeat bg-fixed bg-cover w-full h-[25vh]'>
 				<div className='flex justify-center items-center rounded-xl p-3 m-auto text-white text-xl lg:text-2xl font-body bg-black/50 w-[70vw] lg:w-[50vw] '>
 					<h1>Cabaña Sur</h1>
 				</div>
@@ -132,8 +121,8 @@ const Cabañas = () => {
 					<h1>Cabaña Norte</h1>
 				</div>
 			</div>
-			<div className='flex flex-col lg:flex-row justify-center lg:px-[8vw] gap-10  lg:mt-20'>
-				<div className='flex flex-col w-full lg:w-[75%] justify-center'>
+			<div className='flex justify-center lg:px-[8vw] gap-10  lg:mt-20 mb-10'>
+				<div className='flex flex-col w-full lg:full justify-center'>
 					<Carousel
 						// autoPlay={true}
 						showThumbs={false}
@@ -187,7 +176,7 @@ const Cabañas = () => {
 								<ul className='text-slate-500 lg:leading-7 lg:text-base text-sm pt-5 font-medium list-disc'>
 									<li>
 										Dos habitaciones confortables amplias y luminosas con vista
-										al valle.
+										al parque.
 									</li>
 									<li>cama matrimonial queen size con colchón de resorte </li>
 									<li>Cama individual con colchón de resorte.</li>

@@ -61,7 +61,6 @@ const DateRangeComp = ({ setStay }) => {
 			setOpen(false);
 		}
 	};
-	console.log(open);
 
 	return (
 		<div ref={refOne} className='relative'>

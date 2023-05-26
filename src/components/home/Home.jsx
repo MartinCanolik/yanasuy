@@ -36,9 +36,9 @@ const Home = ({ isMobile }) => {
 							<div className='flex  flex-wrap overflow-auto justify-center items-center text-white lg:text-md  bg-black/25 my-5 mx-5 px-10 py-10 rounded-lg'>
 								<p className='leading-6 lg:leading-6 text-center lg:text-left my-auto'>
 									Tras recorrer nuestro increíble país, nos decidimos por Merlo,
-									un lugar increíble lleno de magia, paraíso natural. Declarado
-									TERCER MICLOCLIMA DE MUNDO y PRIMEROS EN CÁLIDAD AMBIENTAL.{" "}
-									<br /> <br />
+									un lugar lleno de magia y paraíso natural. Declarado TERCER
+									MICLOCLIMA DE MUNDO y PRIMERO EN CÁLIDAD AMBIENTAL. <br />{" "}
+									<br />
 									Emprendimiento familiar dedicados al servicio turístico,
 									brindando una cálida y personalizada atención. <br /> <br />
 								</p>
@@ -123,27 +123,30 @@ const Home = ({ isMobile }) => {
 					<h1>Nuestro Parque</h1>
 				</div>
 				<div className='flex flex-col justify-center bg-nav p-5 mt-[10vh] lg:mt-[10vh] m-auto rounded-lg lg:h-[400px] lg:w-[1000px] '>
-					<div className='flex items-center  align-center bg-black/25 p-5 rounded-lg '>
+					<div className='flex items-center mt-5  align-center bg-black/25 p-5 rounded-lg '>
 						<h1 className='text-white text-sm mx-auto lg:text-xl font-body'>
 							UNA HECTÀREA PARQUIZADA
 						</h1>
 					</div>
 					<div className='text-white text-xm bg-black/25 mt-5 mb-10 p-5 rounded-lg'>
 						<p className='lg:leading-7 mt-2'>
-							Te espera una increíble hectárea con VISTA PANORÁMICA A LA SIERRA
-							DE LOS COMECHINGONES. Amplio parque con una hermosa PISCINA CON
-							YACUZZI de 18 metros x 8 metros rodeada por almendros y molles,
-							con reposeras y lugar de descanso. Arcos de Futbol y Hamaca
-							QUINCHO de 8 metros x 5 metros, con mesones y sillones de madera y
-							una mesa de Ping Pong para que puedan divertirse en familia.
-							SECTOR DEJEMOS HUELLAS BONITAS, hermoso lugar para crear arte y
-							dejar recuerdos. SECTOR DE DESCANSO Y LECTURA o bien para tomar
-							unos ricos mates a la sombra de molles.
+							Te espera una inimaginable hectárea con VISTA PANORÁMICA A LA
+							SIERRA DE LOS COMECHINGONES. <br /> Amplio parque con una hermosa
+							PISCINA CON YACUZZI de 18 metros x 8 metros rodeada por almendros
+							y molles, con reposeras y lugar de descanso. Arcos de Futbol y
+							Hamaca. <br /> QUINCHO de 8 metros x 5 metros, con mesones y
+							sillones de madera y una mesa de Ping Pong para que puedan
+							divertirse en familia. <br /> SECTOR DEJEMOS HUELLAS BONITAS,
+							hermoso lugar para crear arte y dejar recuerdos. SECTOR DE
+							DESCANSO Y LECTURA o bien para tomar unos ricos mates a la sombra
+							de molles.
 						</p>
 					</div>
 				</div>
 				<div className='flex flex-col lg:flex-row justify-center gap-[10vw] mt-[10vh] mb-[15vh] items-center'>
-					<div className='flex flex-col gap-[10vh] lg:gap-10 '>
+					<div
+						className='flex flex-col gap-[10vh] lg:gap-10 '
+						onClick={() => navigate("/cabañas/piscina")}>
 						<h1 className='p-5 m-auto text-stone-800 font-bold font-body text-center text-xl font-stone-800 bg-pink lg:rounded-xl w-full lg:w-[500px]'>
 							Piscina
 						</h1>
@@ -160,7 +163,9 @@ const Home = ({ isMobile }) => {
 							/>
 						</div>
 					</div>
-					<div className='flex flex-col gap-[10vh]   lg:gap-10 '>
+					<div
+						className='flex flex-col gap-[10vh]   lg:gap-10 '
+						onClick={() => navigate("/cabañas/parque")}>
 						<div className='p-5 m-auto text-stone-800 text-center text-xl font-body font-bold bg-pink lg:rounded-xl w-full lg:w-[500px]'>
 							<h1>Parque</h1>
 						</div>

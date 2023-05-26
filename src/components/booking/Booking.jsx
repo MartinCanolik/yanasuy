@@ -61,8 +61,6 @@ const Booking = () => {
 				},
 			});
 			swappUpSuccess(values.firstName);
-
-			console.log(response);
 		} catch (err) {
 			swappUpError();
 			console.log(err);
@@ -153,10 +151,7 @@ const Booking = () => {
 								<label htmlFor='' className=' text-white text-sm font-bold'>
 									Check in - Check out
 								</label>
-								{/* <input
-									type='text'
-									className='appearance-none text-sm mt-2 py-2 px-3 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
-								/> */}
+
 								<DateRangeComp setStay={setStay} />
 							</div>
 						</div>
