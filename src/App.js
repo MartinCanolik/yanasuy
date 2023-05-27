@@ -12,9 +12,12 @@ import Footer from "./components/footer/Footer";
 import Watsapp from "./components/logoWpp/Watsapp";
 import Cabañas from "./components/cabanias/Cabañas";
 import Merlo from "./components/merlo/merlo.jsx";
+import { useLocation } from "react-router-dom";
 
 function App() {
 	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+	const location = useLocation();
 
 	useEffect(() => {
 		function handleResize() {
@@ -38,9 +41,12 @@ function App() {
 
 			<Watsapp />
 
-			<div className='!absolute top-[20vh] lg:top-[40vh] h-[80%] lg:inset-x-[10%]'>
-				<CarouselCustom />
-			</div>
+			{location.pathname !== "/cabañas" && (
+				<div className='!absolute top-[20vh] lg:top-[40vh] h-[50%] lg:inset-x-[10%]'>
+					<CarouselCustom />
+				</div>
+			)}
+
 			<Routes>
 				<Route path='/' element={<Home isMobile={isMobile} />} />
 				<Route path='/contacto' element={<Contact />} />
