@@ -21,7 +21,7 @@ const CarouselCustom = () => {
 		imgToRender();
 	}, [location.pathname]);
 
-	const condition = location.pathname === "/" || location.pathname === "/merlo";
+	// const condition = location.pathname === "/" || location.pathname === "/merlo";
 
 	return (
 		<div>
