@@ -7,7 +7,6 @@ import { useParams, useNavigate } from "react-router-dom";
 const Cabañas = () => {
 	const { name } = useParams();
 	const navigate = useNavigate();
-	// console.log(name);
 
 	//to find scrool y
 

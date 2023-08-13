@@ -18,14 +18,18 @@ const DateRangeComp = ({ setStay }) => {
 			key: "selection",
 		},
 	]);
+	const formattedStartDate =
+		range.length && format(range[0].startDate, "dd/MM/yyyy");
+	const formattedEndDate =
+		range.length && format(range[0].endDate, "dd/MM/yyyy");
 
-	const calendar = useCallback(() => {
-		setStay(range);
-	}, [range, setStay]);
-
-	useMemo(() => {
-		calendar();
-	}, [calendar]);
+	const formatDateSelection = () => {
+		const formattedSelection = {
+			startDate: formattedStartDate,
+			endDate: formattedEndDate,
+		};
+		setStay(formattedSelection);
+	};
 
 	// const unavailableDate = [
 	// 	addDays(new Date(), 8),
@@ -47,7 +51,6 @@ const DateRangeComp = ({ setStay }) => {
 
 	// hide dropdown on ESC press
 	const hideOnEscape = (e) => {
-		// console.log(e.key)
 		if (e.key === "Escape") {
 			setOpen(false);
 		}
@@ -55,8 +58,6 @@ const DateRangeComp = ({ setStay }) => {
 
 	// Hide on outside click
 	const hideOnClickOutside = (e) => {
-		// console.log(refOne.current)
-		// console.log(refOne.current);
 		if (refOne.current && !refOne.current.contains(e.target)) {
 			setOpen(false);
 		}
@@ -66,10 +67,7 @@ const DateRangeComp = ({ setStay }) => {
 		<div ref={refOne} className='relative'>
 			<input
 				className=' cursor-pointer appearance-none text-sm mt-2 py-2 px-3 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
-				value={`${format(range[0].startDate, "dd/MM/yy")} - ${format(
-					range[0].endDate,
-					"dd/MM/yy"
-				)}`}
+				value={`${formattedStartDate} - ${formattedEndDate}`}
 				readOnly
 				type='text'
 				onClick={() => setOpen(!open)}
@@ -78,7 +76,9 @@ const DateRangeComp = ({ setStay }) => {
 			<div>
 				{open && (
 					<DateRange
-						onChange={(item) => setRange([item.selection])}
+						onChange={(item) => {
+							setRange([item.selection]), formatDateSelection();
+						}}
 						editableDateInputs={true}
 						moveRangeOnFirstSelection={false}
 						ranges={range}

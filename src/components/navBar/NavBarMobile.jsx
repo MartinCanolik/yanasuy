@@ -6,13 +6,13 @@ import Swal from "sweetalert2";
 const NavBarMobile = () => {
 	const navigate = useNavigate();
 	const [isOpen, setIsOpen] = useState(false);
+	console.log(isOpen);
 
 	const blockScroll = () => {
 		const scrollPosition =
 			window.pageYOffset || document.documentElement.scrollTop;
 		document.body.style.overflow = "hidden";
 		document.body.style.position = "fixed";
-		document.body.style.top = `-${scrollPosition}px`;
 	};
 
 	// Desbloquear el scroll del elemento window al desmontar el componente
@@ -23,7 +23,6 @@ const NavBarMobile = () => {
 		document.body.style.overflow = "";
 		document.body.style.position = "";
 		document.body.style.top = "";
-		window.scrollTo(0, Math.abs(scrollPosition));
 	};
 
 	const handleMenu = () => {
@@ -98,7 +97,7 @@ const NavBarMobile = () => {
 						className='flex text-white text-sm font-body tracking-wide cursor-pointer'
 						onClick={() => {
 							navigate("/cabañas");
-							setIsOpen(false);
+							handleMenu();
 						}}>
 						<a className='list-link'>CABAÑAS</a>
 					</li>
@@ -106,7 +105,7 @@ const NavBarMobile = () => {
 					<li
 						onClick={() => {
 							alertPromotions();
-							setIsOpen(false);
+							handleMenu();
 						}}
 						className='flex text-white text-sm font-body tracking-wide cursor-pointer'>
 						<a className='list-link'>PROMOCIONES</a>
@@ -116,7 +115,7 @@ const NavBarMobile = () => {
 						className='flex text-white text-sm font-body tracking-wide cursor-pointer'
 						onClick={() => {
 							navigate("/contacto");
-							setIsOpen(false);
+							handleMenu();
 						}}>
 						<a className='list-link'>CONTACTO</a>
 					</li>
@@ -126,7 +125,7 @@ const NavBarMobile = () => {
 						className='flex text-white text-sm font-body tracking-wide cursor-pointer'
 						onClick={() => {
 							navigate("/merlo");
-							setIsOpen(false);
+							handleMenu();
 						}}>
 						<a className='list-link'>MERLO </a>
 					</li>
