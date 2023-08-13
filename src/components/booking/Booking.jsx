@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import DateRangeComp from "./DateRangeComp";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import format from "date-fns/format";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { validationSchema } from "../../schema/schema";
+import { addDays } from "date-fns";
 
 const Booking = () => {
-	const [stay, setStay] = useState([]);
-
+	const [stay, setStay] = useState({
+		startDate: new Date(),
+		endDate: addDays(new Date(), 7),
+	});
 	//alerts
 	const swappUpSuccess = (name) => {
 		Swal.fire({
@@ -29,7 +31,7 @@ const Booking = () => {
 
 	const submitForm = async (values) => {
 		try {
-			const response = await axios({
+			await axios({
 				method: "post",
 				url: "https://api.sendinblue.com/v3/smtp/email",
 				data: {
@@ -66,8 +68,6 @@ const Booking = () => {
 			console.log(err);
 		}
 	};
-	const startDate = stay.length && format(stay[0].startDate, "dd/MM/yyyy");
-	const endDate = stay.length && format(stay[0].endDate, "dd/MM/yyyy");
 
 	return (
 		<div className=''>
@@ -80,8 +80,8 @@ const Booking = () => {
 					email: "",
 					query: "",
 					phone: "",
-					startDate: startDate,
-					endDate: endDate,
+					startDate: stay.startDate,
+					endDate: stay.endDate,
 				}}
 				onSubmit={(values, { resetForm }) => {
 					submitForm({ ...values });
@@ -273,6 +273,7 @@ const Booking = () => {
 							<button
 								type='submit'
 								// disabled={isSubmitting}
+
 								className='bg-red-400 hover:bg-nav text-white font-bold  py-2 px-4 rounded border-2 border-transparent focus:outline-none focus:shadow-outline hover:text-green-800 hover:border-green-800  disabled:opacity-5'>
 								Enviar
 							</button>
