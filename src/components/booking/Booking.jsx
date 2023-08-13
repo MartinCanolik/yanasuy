@@ -39,8 +39,8 @@ const Booking = () => {
 					},
 					to: [
 						{
-							email: "martin.canolik@gmail.com",
-							name: "Martin Canolik",
+							email: "yanasuy@gmail.com",
+							name: "Yanasuy",
 						},
 					],
 					subject: "Solicitud De Reserva !",

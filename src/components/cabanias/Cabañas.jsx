@@ -121,8 +121,8 @@ const Cabañas = () => {
 					<h1>Cabaña Norte</h1>
 				</div>
 			</div>
-			<div className='flex justify-center lg:px-[8vw] gap-10  lg:mt-20 mb-10'>
-				<div className='flex flex-col w-full lg:full justify-center'>
+			<div className='flex flex-col lg:flex-row justify-center lg:px-[8vw] gap-10  lg:mt-20'>
+				<div className='flex flex-col w-full lg:w-[75%] justify-center'>
 					<Carousel
 						// autoPlay={true}
 						showThumbs={false}
