@@ -21,9 +21,6 @@ export const validationSchema = Yup.object({
 
 	phone: Yup.string().matches(phoneRx, "(Número no válido)").required("*"),
 
-	startDate: Yup.string().max(10, "formato de fecha no valido").required("*"),
-
-	endDate: Yup.string().max(10, "formato de fecha no valido").required("*"),
 	adults: Yup.number().max(
 		10,
 		"No hay suficiente lugar disponible para realizar su reserva"
